@@ -1,0 +1,6 @@
+{"Language":0,
+"CameraDatas":[{"Name":"",
+"SerialNumber":"21969731",
+"Width":2592,
+"Height":1944,
+"Disable":false}]}

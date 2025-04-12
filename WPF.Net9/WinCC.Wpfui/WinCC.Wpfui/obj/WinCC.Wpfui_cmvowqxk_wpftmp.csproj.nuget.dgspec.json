@@ -1,0 +1,136 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Administrator\\Desktop\\WinCC.Wpfui\\WinCC.Wpfui\\WinCC.Wpfui.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Administrator\\Desktop\\CommonModels\\CommonModels\\CommonModels.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\CommonModels\\CommonModels\\CommonModels.csproj",
+        "projectName": "CommonModels",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\CommonModels\\CommonModels\\CommonModels.csproj",
+        "UsingMicrosoftNETSdk": false,
+        "frameworks": {
+          "net461": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "C:\\Users\\Administrator\\Desktop\\WinCC.Wpfui\\WinCC.Wpfui\\WinCC.Wpfui.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\WinCC.Wpfui\\WinCC.Wpfui\\WinCC.Wpfui.csproj",
+        "projectName": "WinCC.Wpfui",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\WinCC.Wpfui\\WinCC.Wpfui\\WinCC.Wpfui.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\WinCC.Wpfui\\WinCC.Wpfui\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 18.1.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0-windows10.0.22000.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0-windows10.0.22000": {
+            "targetAlias": "net9.0-windows10.0.22000.0",
+            "projectReferences": {
+              "C:\\Users\\Administrator\\Desktop\\CommonModels\\CommonModels\\CommonModels.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\CommonModels\\CommonModels\\CommonModels.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0-windows10.0.22000": {
+          "targetAlias": "net9.0-windows10.0.22000.0",
+          "dependencies": {
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "NLog": {
+              "target": "Package",
+              "version": "[5.4.0, )"
+            },
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.4.0, )"
+            },
+            "WPF-UI": {
+              "target": "Package",
+              "version": "[4.0.2, )"
+            },
+            "WPF-UI.Abstractions": {
+              "target": "Package",
+              "version": "[4.0.2, )"
+            },
+            "WPF-UI.Tray": {
+              "target": "Package",
+              "version": "[4.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Windows.SDK.NET.Ref",
+              "version": "[10.0.22000.57, 10.0.22000.57]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Windows.SDK.NET.Ref.Windows": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

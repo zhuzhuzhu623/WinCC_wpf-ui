@@ -1,0 +1,90 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using WinCC.Dal.DapperDal;
+using WinCC.Model.BllModel;
+using WinCC.Motion;
+using WinCC.Motion.Hust;
+using WinCC.Vision.CameraList;
+using System.Windows;
+using System.Windows.Media.Imaging;
+using System.Drawing.Printing;
+using System.Security.Policy;
+using System.Xml.Linq;
+namespace WinCC.Bll
+{
+    public class AppSession
+    {
+        public AppSession() 
+        {
+
+        }
+
+        /// <summary>
+        /// 数据库访问工具
+        /// </summary>
+        public static IDapper Dapper = null;
+        /// <summary>
+        /// 控制器访问工具
+        /// </summary>
+        public static IMotionBase Motion = null;
+
+
+        public static VisionPro VisionPro = null;   
+        /// <summary>
+        /// 软件初始化系统参数
+        /// </summary>
+        /// <returns></returns>
+        public static BllResult InitSystemSetting()
+        {
+           // Dapper = new DapperHelper("Data Source=WIN-1OA85801VP6\\WINCC;Initial Catalog=WinCC_Wcs;Persist Security Info=True;User ID=sa;Password=123456", 0);
+            return BllResultFactory.Sucess();
+        }
+
+
+        /// <summary>
+        /// 软件初始化相机
+        /// </summary>
+        /// <returns></returns>
+        public static BllResult InitVision()
+        {
+            VisionPro= new VisionPro();
+            return BllResultFactory.Sucess();
+            VisionPro.CameraInit("23604863");
+            return BllResultFactory.Sucess();
+        }
+
+        /// <summary>
+        /// 软件初始化控制器
+        /// </summary>
+        /// <returns></returns>
+        public static BllResult InitMotion()
+        {
+            Motion = new HustService();
+            return BllResultFactory.Sucess();
+            
+            var result = Motion.Init();
+            if (result.Success)
+                return BllResultFactory.Sucess();
+            else
+                return BllResultFactory.Error(result.Msg);   
+        }
+
+        /// <summary>
+        /// 软件初始化其他
+        /// </summary>
+        /// <returns></returns>
+        public static BllResult InitOthers()
+        {
+
+      
+            return BllResultFactory.Sucess();
+        }
+
+
+
+    }
+}

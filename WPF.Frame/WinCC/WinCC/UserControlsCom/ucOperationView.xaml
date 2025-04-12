@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="WinCC.UserControlsCom.ucOperationView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WinCC.UserControlsCom"
+                     xmlns:attaches="clr-namespace:WinCC.Controls.Attaches"
+             mc:Ignorable="d" 
+             d:DesignHeight="200" d:DesignWidth="800">
+    <StackPanel Orientation="Horizontal">
+        <attaches:ImageButton Image="pack://application:,,,/Asserts/Photos/Home.png" x:Name="btnHome" Content="归零"  Style="{StaticResource ImageFileTextButton}"  ></attaches:ImageButton>
+        <attaches:ImageButton Image="pack://application:,,,/Asserts/Photos/New.png"  Content="启动"  Style="{StaticResource ImageFileTextButton}"  ></attaches:ImageButton>
+        <attaches:ImageButton Image="pack://application:,,,/Asserts/Photos/OpenPro.png"  Content="暂停"  Style="{StaticResource ImageFileTextButton}"  ></attaches:ImageButton>
+        <attaches:ImageButton Image="pack://application:,,,/Asserts/Photos/SaveAs.png"  Content="执行"  Style="{StaticResource ImageFileTextButton}" ></attaches:ImageButton>
+        <attaches:ImageButton Image="pack://application:,,,/Asserts/Photos/Save.png"  Content="重置"  Style="{StaticResource ImageFileTextButton}"  ></attaches:ImageButton>
+    </StackPanel>
+</UserControl>

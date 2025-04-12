@@ -1,0 +1,96 @@
+﻿<UserControl x:Class="WinCC.Controls.UcControls.NumUpDown"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WinCC.Controls.UcControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="40" d:DesignWidth="120">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" MinWidth="0"/>
+            <ColumnDefinition Width="9*" MinWidth="36"/>
+            <ColumnDefinition Width="5*" MinWidth="20" MaxWidth="40"/>
+        </Grid.ColumnDefinitions>
+        <Label 
+			Name="myNumLabelName" Grid.Row="0" Grid.Column="0" Margin="0" VerticalAlignment="Center" HorizontalAlignment="Left" Foreground="{DynamicResource TextBoxForeground}" FontSize="12" />
+        <TextBox 	Grid.Column="1" x:Name="tbContent" Margin="0 0 0 0" FontSize="14" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" 	TextChanged="tbContentTextChanged" GotFocus="tbContentGotFocus"	LostFocus="tbCntLostFocus"	Text="0" Background="Transparent" Foreground="{DynamicResource TextBoxForeground}">
+            <TextBox.Style>
+                <Style TargetType="TextBox">
+                    <Setter Property="Background" Value="#FFFFFF"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="{DynamicResource TextSelectBorderBrush}"/>
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" Value="#FFFFFF"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </TextBox.Style>
+        </TextBox>
+        <Grid Grid.Column="2">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <RepeatButton Grid.Row="0" x:Name="btnAdd" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content=" + " Margin="0 0 0 0" Click="btnAddClick"  ClickMode="Press" Delay="200" 	Interval="80"  Foreground="{DynamicResource ButtonForeground}" BorderBrush="{DynamicResource ButtonBorderBrush}">
+                <RepeatButton.Style>
+                    <Style TargetType="RepeatButton">
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type RepeatButton}">
+                                    <Border BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" BorderThickness="0 1 1 0.5" CornerRadius="0">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="{DynamicResource ButtonSelected}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="{DynamicResource ButtonPressedBackground}"/>
+                                <Setter Property="Foreground" Value="#FFFFFF"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Background" Value="#FFFFFF"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </RepeatButton.Style>
+            </RepeatButton>
+            <RepeatButton Grid.Row="1" x:Name="btnSub" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Content=" - " Margin="0 0 0 0" Click="btnSubClick" ClickMode="Press" Delay="200" Interval="80" Foreground="{DynamicResource ButtonForeground}" BorderBrush="{DynamicResource ButtonBorderBrush}" BorderThickness="0 1 1 1">
+                <RepeatButton.Style>
+                    <Style TargetType="RepeatButton">
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="{x:Type RepeatButton}">
+                                    <Border BorderBrush="{TemplateBinding BorderBrush}" Background="{TemplateBinding Background}" BorderThickness="0 0.5 1 1" CornerRadius="0">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="{DynamicResource ButtonSelected}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="{DynamicResource ButtonPressedBackground}"/>
+                                <Setter Property="Foreground" Value="#FFFFFF"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Background" Value="#FFFFFF"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </RepeatButton.Style>
+            </RepeatButton>
+        </Grid>
+        
+    </Grid>
+    </UserControl>

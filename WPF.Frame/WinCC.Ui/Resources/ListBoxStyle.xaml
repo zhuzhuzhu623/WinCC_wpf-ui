@@ -1,0 +1,102 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  >
+
+    <Style x:Key="LogSelectedMain" TargetType="ListBoxItem" >
+        <Setter Property="FontFamily" Value="微软雅黑"/>
+        <Setter Property="FontWeight" Value="Medium"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ListBoxItem}" >
+                    <Grid VerticalAlignment="Stretch" Height="26">
+                        <Border x:Name="back" Background="Transparent" BorderThickness="0,0,0,1" BorderBrush="{DynamicResource ListBoxBackground}" CornerRadius="5" />
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <Line x:Name="line"  Margin="3 3 0 3"  HorizontalAlignment="Left"  SnapsToDevicePixels="True" Stroke="{DynamicResource MainLine}" StrokeThickness="4"  X1="10"    X2="10" Y1="0" Y2="50"/>
+                            <TextBlock x:Name="text1"  Margin="6 0 0 0" Text="{Binding LogViewTime}" Width="88" VerticalAlignment="Center" FontSize="14" Foreground="{StaticResource TextForeground}"  />
+                            <TextBlock  x:Name="text2" Margin="6 0 0 0" Text="{Binding LogLevel}" Width="40"  VerticalAlignment="Center" FontSize="14" Foreground="{StaticResource TextForeground}"  />
+                            <TextBlock x:Name="text3" Margin="6 0 0 0" Text="{Binding Content}" Width="100" VerticalAlignment="Center" FontSize="14" Foreground="{StaticResource TextForeground}"   FontWeight="DemiBold" />
+                        </StackPanel>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter TargetName="back" Property="Background" Value="{DynamicResource ListBoxLogSelected}" />
+                            <Setter TargetName="back" Property="BorderThickness" Value="0" />
+                            <Setter TargetName="text1" Property="Foreground" Value="{DynamicResource TextForeground}"/>
+                            <Setter TargetName="text2" Property="Foreground" Value="{DynamicResource TextForeground}"/>
+                            <Setter TargetName="line" Property="Stroke" Value="{DynamicResource BorderLine}"/>
+                            <!--<Setter TargetName="line" Property="Stroke" Value="{StaticResource MainWinListLine}"/>-->
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="back" Property="Background" Value="{DynamicResource ListBoxLogSelected}" />
+                            <Setter TargetName="back" Property="BorderThickness" Value="0" />
+                            <Setter TargetName="text1" Property="Foreground" Value="{DynamicResource TextForeground}"/>
+                            <Setter TargetName="line" Property="Stroke" Value="{DynamicResource BorderLine}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="LogListBox" TargetType="ListBox" >
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Background" Value="{DynamicResource ListBoxBackground}"/>
+        <Setter Property="ItemsPanel">
+            <Setter.Value>
+                <ItemsPanelTemplate>
+                    <StackPanel  Background="{DynamicResource ListBoxBackground }">
+                    </StackPanel>
+                </ItemsPanelTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ItemContainerStyle" Value="{StaticResource LogSelectedMain}"/>
+    </Style>
+
+
+
+    <Style x:Key="SelectedProgram" TargetType="ListBoxItem" >
+        <Setter Property="FontFamily" Value="微软雅黑"/>
+        <Setter Property="FontWeight" Value="Medium"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                    <Grid VerticalAlignment="Stretch" Height="45" Width="140" Margin="0 3 0 3">
+                        <Border x:Name="back" Background="Transparent" BorderThickness="0,0,0,0" BorderBrush="Transparent" CornerRadius="5" />
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <Line x:Name="line"  Margin="3 12 0 10"  HorizontalAlignment="Left"  SnapsToDevicePixels="True" Stroke="{DynamicResource MainLine}" StrokeThickness="5"  X1="10"    X2="10" Y1="0" Y2="50"/>
+                            <TextBlock x:Name="text" Margin="12 0 0 0" Text="{Binding MenuName}" FontSize="16"    Width="110" TextTrimming="WordEllipsis" VerticalAlignment="Center"  Foreground="{StaticResource TextForeground}"  />
+                        </StackPanel>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter TargetName="back" Property="Background" Value="{StaticResource ListBoxLogSelected}" />
+                            <Setter TargetName="line" Property="Stroke" Value="{StaticResource BorderLine}" />
+                            <Setter TargetName="back" Property="BorderThickness" Value="0" />
+                            <Setter TargetName="text" Property="Foreground" Value="{StaticResource TextForeground}"/>
+                            <!--<Setter TargetName="line" Property="Stroke" Value="{StaticResource MainWinListLine}"/>-->
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="back" Property="Background" Value="{StaticResource ListBoxLogSelected}" />
+                            <Setter TargetName="back" Property="BorderThickness" Value="0" />
+                            <Setter TargetName="text" Property="Foreground" Value="{StaticResource TextForeground}"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ProgramBaseListBox" TargetType="ListBox" >
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="ItemsPanel">
+            <Setter.Value>
+                <ItemsPanelTemplate>
+                    <StackPanel Orientation="Vertical" Background="Transparent">
+                    </StackPanel>
+                </ItemsPanelTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="ItemContainerStyle" Value="{StaticResource SelectedProgram}"/>
+    </Style>
+
+</ResourceDictionary>

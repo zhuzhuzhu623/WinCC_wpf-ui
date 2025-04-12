@@ -1,0 +1,12 @@
+C:\Users\Administrator\Desktop\WPF.Frame\WinCC\WinCC.Models\obj\Debug\WinCC.Model.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\WPF.Frame\WinCC\WinCC.Models\obj\Debug\WinCC.Model.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\WPF.Frame\WinCC\WinCC.Models\bin\Debug\WinCC.Models.dll
+C:\Users\Administrator\Desktop\WPF.Frame\WinCC\WinCC.Models\bin\Debug\WinCC.Models.pdb
+C:\Users\Administrator\Desktop\WPF.Frame\WinCC\WinCC.Models\obj\Debug\WinCC.Models.dll
+C:\Users\Administrator\Desktop\WPF.Frame\WinCC\WinCC.Models\obj\Debug\WinCC.Models.pdb
+D:\WPF.Frame\WinCC\WinCC.Models\bin\Debug\WinCC.Models.dll
+D:\WPF.Frame\WinCC\WinCC.Models\bin\Debug\WinCC.Models.pdb
+D:\WPF.Frame\WinCC\WinCC.Models\obj\Debug\WinCC.Model.csproj.AssemblyReference.cache
+D:\WPF.Frame\WinCC\WinCC.Models\obj\Debug\WinCC.Model.csproj.CoreCompileInputs.cache
+D:\WPF.Frame\WinCC\WinCC.Models\obj\Debug\WinCC.Models.dll
+D:\WPF.Frame\WinCC\WinCC.Models\obj\Debug\WinCC.Models.pdb

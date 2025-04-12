@@ -1,0 +1,273 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"    xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"  xmlns:attaches="clr-namespace:WinCC.Controls.Attaches">
+
+    <Style x:Key="HeadButton" TargetType="{x:Type Button}"  BasedOn="{StaticResource {x:Type Button}}">
+        <Setter Property="Background" Value="{DynamicResource GoodsButton}" />
+        <Setter Property="Foreground" Value="{DynamicResource ButtonForeground}"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="Focusable" Value="True"/>
+        <Setter Property="md:ButtonAssist.CornerRadius" Value="4"/>
+        <Setter Property="Width" Value="70"/>
+        <Setter Property="Height" Value="70"/>
+        <Setter Property="Margin" Value="12 0 0 0 "/>
+    </Style>
+
+    <!--<Style TargetType="{x:Type attaches:ImageButton}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type attaches:ImageButton}">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Border x:Name="border" Grid.RowSpan="2" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}" 
+    SnapsToDevicePixels="true" CornerRadius="3,3,3,3"/>
+                        <Image Grid.Row="0" Source="{TemplateBinding Image}"
+     Width="{TemplateBinding ImageWidth}"
+     Height="{TemplateBinding ImageHeight}"
+     VerticalAlignment="{TemplateBinding VerticalAlignment}"/>
+                        <ContentPresenter Grid.Row="1" HorizontalAlignment="Center" Margin="{TemplateBinding Padding}" 
+     VerticalAlignment="Center" RecognizesAccessKey="True" />
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Foreground" Value="#999999"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>-->
+
+    <Style x:Key="ImageFileTextButton" TargetType="{x:Type attaches:ImageButton}">
+        <Setter Property="Background" Value="{DynamicResource ButtonBackground}" />
+        <Setter Property="Foreground" Value="{DynamicResource TextForeground}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource ButtonLine}" />
+        <Setter Property="BorderThickness" Value="0.7" />
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Focusable" Value="True"/>
+        <Setter Property="md:ButtonAssist.CornerRadius" Value="4"/>
+        <Setter Property="Width" Value="80"/>
+        <Setter Property="Height" Value="80"/>
+        <Setter Property="ImageHeight" Value="32"/>
+        <Setter Property="ImageWidth" Value="32"/>
+        <Setter Property="Margin" Value="8 0 0 0"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Focusable" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type attaches:ImageButton}">
+                    <Grid >
+                        <Border x:Name="MyBackgroundElement" Background="{TemplateBinding Background}" BorderBrush="{DynamicResource ButtonLine}" BorderThickness="0.7" CornerRadius="5">
+                            <StackPanel Margin="{TemplateBinding Padding}" Orientation="Vertical" IsHitTestVisible="True" HorizontalAlignment="Center">
+                                <Image Grid.Row="0" Source="{TemplateBinding Image}" Width="{TemplateBinding ImageWidth}" Height="{TemplateBinding ImageHeight}" VerticalAlignment="{TemplateBinding VerticalAlignment}" Margin="0 10 0 0"/>
+                                <TextBlock x:Name="MyTextBlock"  Text="{TemplateBinding Content}" VerticalAlignment="Center" Margin="0,10,0,0"    FontSize="{TemplateBinding FontSize}" Foreground="{TemplateBinding Foreground}" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="MyBackgroundElement" Property="Background" Value="{DynamicResource MainWinSelected }"/>
+                            <Setter TargetName="MyBackgroundElement" Property="Opacity" Value="1"/>
+                            <Setter TargetName="MyBackgroundElement" Property="BorderThickness" Value="1"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="MyBackgroundElement" Property="Background" Value="{DynamicResource MainWinBackSelected }"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="MyTextBlock" Property="Foreground" Value="{DynamicResource TextForeground }"/>
+                            <Setter TargetName="MyTextBlock" Property="Opacity" Value="1"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type attaches:ImageButton}">
+        <Setter Property="Background" Value="{DynamicResource ButtonLine}"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Focusable" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type attaches:ImageButton}">
+                    <Grid >
+                        <Border x:Name="MyBackgroundElement" Background="{TemplateBinding Background}" BorderBrush="{DynamicResource ButtonLine}" BorderThickness="0.7" CornerRadius="5">
+                            <StackPanel Margin="{TemplateBinding Padding}" Orientation="Horizontal" IsHitTestVisible="True" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}">
+                                <Image Grid.Row="0" Source="{TemplateBinding Image}" Width="{TemplateBinding ImageWidth}" Height="{TemplateBinding ImageHeight}" VerticalAlignment="{TemplateBinding VerticalAlignment}" Margin="10 0 0 0"/>
+                                <TextBlock x:Name="MyTextBlock"  Text="{TemplateBinding Content}" VerticalAlignment="Center" Margin="15,0,0,0"    FontSize="{TemplateBinding FontSize}" Foreground="{TemplateBinding Foreground}"/>
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="MyBackgroundElement" Property="Background" Value="{DynamicResource MainWinSelected }"/>
+                            <Setter TargetName="MyBackgroundElement" Property="Opacity" Value="1"/>
+                            <Setter TargetName="MyBackgroundElement" Property="BorderThickness" Value="1"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="MyBackgroundElement" Property="Background" Value="{DynamicResource MainWinBackSelected }"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="MyTextBlock" Property="Foreground" Value="{DynamicResource TextForeground }"/>
+                            <Setter TargetName="MyTextBlock" Property="Opacity" Value="1"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="ImageFileButton" TargetType="{x:Type attaches:ImageButton}"  BasedOn="{StaticResource {x:Type attaches:ImageButton}}">
+        <Setter Property="Background" Value="{DynamicResource ButtonBackground}" />
+        <Setter Property="Foreground" Value="{DynamicResource TextForeground}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource ButtonLine}" />
+        <Setter Property="BorderThickness" Value="0.7" />
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Focusable" Value="True"/>
+        <Setter Property="md:ButtonAssist.CornerRadius" Value="4"/>
+        <Setter Property="Width" Value="100"/>
+        <Setter Property="Height" Value="37"/>
+        <Setter Property="ImageHeight" Value="25"/>
+        <Setter Property="ImageWidth" Value="25"/>
+        <Setter Property="Margin" Value="4 0 4 0"/>
+    </Style>
+
+
+    <Style x:Key="ImageFileOperationButton" TargetType="{x:Type attaches:ImageButton}"  BasedOn="{StaticResource {x:Type attaches:ImageButton}}">
+        <Setter Property="Background" Value="{DynamicResource ButtonBackground}" />
+        <Setter Property="Foreground" Value="{DynamicResource TextForeground}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource ButtonLine}" />
+        <Setter Property="BorderThickness" Value="0.7" />
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Focusable" Value="True"/>
+        <Setter Property="md:ButtonAssist.CornerRadius" Value="4"/>
+        <Setter Property="Width" Value="80"/>
+        <Setter Property="Height" Value="80"/>
+        <Setter Property="ImageHeight" Value="25"/>
+        <Setter Property="ImageWidth" Value="25"/>
+        <Setter Property="Margin" Value="4 0 4 0"/>
+    </Style>
+
+    <Style x:Key="ImageNoTextButton" TargetType="{x:Type attaches:ImageButton}">
+        <Setter Property="Foreground" Value="{DynamicResource MainColorBackground}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource ButtonLine}" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Focusable" Value="True"/>
+        <Setter Property="md:ButtonAssist.CornerRadius" Value="4"/>
+        <Setter Property="Width" Value="40"/>
+        <Setter Property="Height" Value="37"/>
+        <Setter Property="ImageHeight" Value="20"/>
+        <Setter Property="ImageWidth" Value="20"/>
+        <Setter Property="Margin" Value="4 0 4 0"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Focusable" Value="False"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type attaches:ImageButton}">
+                    <Grid >
+                        <Border x:Name="MyBackgroundElement" Background="{TemplateBinding Background}" BorderBrush="Transparent" BorderThickness="0.7" CornerRadius="5">
+                            <StackPanel Margin="{TemplateBinding Padding}" Orientation="Horizontal" IsHitTestVisible="True" HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}">
+                                <Image Grid.Row="0" Source="{TemplateBinding Image}" Width="{TemplateBinding ImageWidth}" Height="{TemplateBinding ImageHeight}" VerticalAlignment="{TemplateBinding VerticalAlignment}"/>                            
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter TargetName="MyBackgroundElement" Property="Background" Value="{DynamicResource  MainWinSelected}"/>
+                            <Setter TargetName="MyBackgroundElement" Property="Opacity" Value="1"/>
+                            <Setter TargetName="MyBackgroundElement" Property="BorderThickness" Value="0"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter TargetName="MyBackgroundElement" Property="Background" Value="{DynamicResource MainWinSelected }"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    
+    <Style x:Key="ExecuteFileButton" TargetType="{x:Type attaches:ImageButton}"  BasedOn="{StaticResource {x:Type attaches:ImageButton}}">
+        <Setter Property="Background" Value="{DynamicResource ButtonBackground}" />
+        <Setter Property="Foreground" Value="{DynamicResource ButtonForeground}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource ButtonLine}" />
+        <Setter Property="BorderThickness" Value="0.7" />
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Focusable" Value="True"/>
+        <Setter Property="md:ButtonAssist.CornerRadius" Value="4"/>
+        <Setter Property="Width" Value="100"/>
+        <Setter Property="Height" Value="42"/>
+        <Setter Property="ImageHeight" Value="25"/>
+        <Setter Property="ImageWidth" Value="25"/>
+        <Setter Property="Margin" Value="5"/>
+    </Style>
+
+    <!--<Style x:Key="NoButton" TargetType="{x:Type Button}"  BasedOn="{StaticResource {x:Type Button}}">
+        <Setter Property="Background" Value="{StaticResource ButtonPriceBackground}"/>
+        <Setter Property="FontSize" Value="50"/>
+        <Setter Property="Margin" Value="8 " />
+        <Setter Property="Height" Value="112" />
+        <Setter Property="FontFamily" Value="Arial Bold"/>
+        <Setter Property="md:ButtonAssist.CornerRadius" Value="5" />
+        <Setter Property="FontWeight" Value="DemiBold"/>
+        <Setter Property="BorderThickness" Value="0"/>
+    </Style>-->
+
+    <Style x:Key="NoTwoButton" TargetType="{x:Type Button}"  BasedOn="{StaticResource {x:Type Button}}">
+        <Setter Property="Background" Value="{StaticResource ButtonPriceTwoBackground}"/>
+        <Setter Property="FontSize" Value="50"/>
+        <Setter Property="Margin" Value="8 " />
+        <Setter Property="Height" Value="112" />
+        <Setter Property="FontFamily" Value="苹方-简 常规体"/>
+        <Setter Property="md:ButtonAssist.CornerRadius" Value="5" />
+        <Setter Property="FontWeight" Value="Regular"/>
+        <Setter Property="BorderThickness" Value="0"/>
+    </Style>
+
+
+    <Style x:Key="BaseToggleButton" TargetType="{x:Type ToggleButton}"  BasedOn="{StaticResource {x:Type ToggleButton}}">
+        <Setter Property="Background" Value="{StaticResource MainControlsColors}"/>
+        <Setter Property="md:ToggleButtonAssist.SwitchTrackOffBackground" Value="{DynamicResource ToggleButtonBorderBrush}"/>
+        <Setter Property="md:ToggleButtonAssist.SwitchTrackOnBackground" Value="White" />
+    </Style>
+
+    <Style x:Key="LoginButton" TargetType="{x:Type Button}"  BasedOn="{StaticResource {x:Type Button}}">
+        <Setter Property="Background" Value="{DynamicResource MainWinHideBorder}" />
+        <Setter Property="Foreground" Value="{DynamicResource TextForeground}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource MainColorLine}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="Focusable" Value="True"/>
+        <Setter Property="md:ButtonAssist.CornerRadius" Value="4"/>
+    </Style>
+    
+    <Style x:Key="ProgramExpander" TargetType="Expander" BasedOn="{StaticResource MaterialDesignExpander}">
+        <Setter Property="FontFamily" Value="微软雅黑"/>
+        <Setter Property="FontWeight" Value="Medium"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="BorderThickness" Value="0.7"/>
+        <Setter Property="Foreground" Value="{DynamicResource TextForeground}"/>
+        <Setter Property="Background" Value="{DynamicResource ExpanderBankground}"/>
+        <Setter Property="md:ExpanderAssist.HorizontalHeaderPadding" Value="20 5 0 5"/>
+        <Setter Property="HorizontalAlignment" Value="Stretch"/>
+    </Style>
+
+
+    <Style x:Key="DataButton" TargetType="{x:Type Button}"  BasedOn="{StaticResource {x:Type Button}}">
+        <Setter Property="Background" Value="{DynamicResource ButtonBackground}" />
+        <Setter Property="Foreground" Value="{DynamicResource TextForeground}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource MainColorLine}" />
+        <Setter Property="BorderThickness" Value="0.7"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="Focusable" Value="True"/>
+        <Setter Property="md:ButtonAssist.CornerRadius" Value="4"/>
+        <Setter Property="Width" Value="70"/>
+        <Setter Property="Height" Value="32"/>
+        <Setter Property="Margin" Value="4 0 4 0 "/>
+    </Style>
+</ResourceDictionary>

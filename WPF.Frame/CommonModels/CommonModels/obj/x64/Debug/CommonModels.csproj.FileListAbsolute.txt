@@ -1,0 +1,6 @@
+C:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\CommonModels\CommonModels\bin\x64\Debug\CommonModels.dll
+C:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\CommonModels\CommonModels\bin\x64\Debug\CommonModels.pdb
+C:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\CommonModels\CommonModels\obj\x64\Debug\CommonModels.csproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\CommonModels\CommonModels\obj\x64\Debug\CommonModels.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\CommonModels\CommonModels\obj\x64\Debug\CommonModels.dll
+C:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\CommonModels\CommonModels\obj\x64\Debug\CommonModels.pdb

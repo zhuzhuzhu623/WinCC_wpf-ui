@@ -1,0 +1,139 @@
+﻿using CommonModels.BllModel;
+using CommonModels.EnumsExtends;
+using MotionController.MotionEntities;
+using MotionController.MotionEntitis;
+using MotionController.MotionEnums;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace WinCC.Motion.Hust
+{
+    public class HustService : IMotionBase
+    {
+        public BllResult<string> Init()
+         {
+            string str = "192.168.0.168";
+
+            bool b = HustMotion.addTargetCnc(0, 1, str, 0);
+            if (!b)
+                return BllResultFactory<string>.Error("初始卡失败:addTargetCnc!");
+            b = HustMotion.connect(0);
+            if (!b)
+                return BllResultFactory<string>.Error("初始卡失败:connect!");
+            return BllResultFactory<string>.Sucess("成功!");
+        }
+        public BllResult<short> Close()
+        {
+            HustMotion.disconnect();
+            return BllResultFactory<short>.Sucess(1);
+        }
+
+        public BllResult<string> EmergencyStop()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BllResult<string> GoHome(List<AxisData> axisDatas)
+        {
+            throw new NotImplementedException();
+        }
+
+        public BllResult<int> StartManualMove(List<AxisData> axisDatas, int speed)
+        {
+            int axis = 0;//启用轴向
+            int dir = 0;//移动方向
+            foreach (var item in axisDatas)
+            {
+                axis |= Extends.GetIndexInt(item.AxisType);
+                if (item.TypeEnum == EmDirectionType.Reverse)
+                    dir |= Extends.GetIndexInt(item.AxisType);
+            }
+            HustMotion.SetVar(120.GetAddrSYS(), 8);//切换为手动模式
+            HustMotion.SetVar(402.GetAddrREG(), speed);
+            HustMotion.SetVar(401.GetAddrREG(), dir);
+            HustMotion.SetVar(400.GetAddrREG(), axis);
+            return BllResultFactory<int>.Sucess(1);
+        }
+        public BllResult<int> StopManualMove()
+        {
+            HustMotion.SetVar(402.GetAddrREG(), 0);
+            HustMotion.SetVar(401.GetAddrREG(), 0);
+            HustMotion.SetVar(400.GetAddrREG(), 0);
+            return BllResultFactory<int>.Sucess(1);
+        }
+        public BllResult<bool> ReadInBit(EmIBit iBitEnum)
+        {
+            throw new NotImplementedException();
+        }
+
+        public BllResult<bool> ReadOutBit(EmOBit oBitEnum)
+        {
+            throw new NotImplementedException();
+        }
+
+      
+
+        public BllResult<int> WriteAxisParameter(AxisData axisData)
+        {
+            throw new NotImplementedException();
+        }
+
+        public BllResult<bool> WriteOutBit(EmOBit oBitEnum, EmLevel levelEnum)
+        {
+            throw new NotImplementedException();
+        }
+
+        public BllResult<int> Job(AxisData axisData, int distValue)
+        {
+            throw new NotImplementedException();
+        }
+
+        public BllResult<int> StartManualMove(AxisData axisData, int distValue)
+        {
+            throw new NotImplementedException();
+        }
+
+        public BllResult<AxisCurrentValue> GetAxisCurrentValue()
+        {
+            int[] varData = new int[10]; int[] varValues = new int[12];
+            for (int i = 0;i< varData.Length; i++)
+            {
+                varData[i] = 2000 + i; 
+            }
+            var result = HustMotion.GetVars(varData, ref varValues);
+            if (result != 0) return BllResultFactory<AxisCurrentValue>.Error();
+            AxisCurrentValue axisCurrentValue =new AxisCurrentValue();
+            axisCurrentValue.X = varValues[0];
+            axisCurrentValue.Y = varValues[1];
+            axisCurrentValue.Z = varValues[2];
+            axisCurrentValue.A = varValues[3];
+            axisCurrentValue.B = varValues[4];
+            axisCurrentValue.C = varValues[5];
+            axisCurrentValue.X1 = varValues[6];
+            axisCurrentValue.Y1 = varValues[7];
+            axisCurrentValue.Z1 = varValues[8];
+            axisCurrentValue.A1 = varValues[9];
+            axisCurrentValue.B1 = varValues[10];
+            axisCurrentValue.C1 = varValues[11];
+            return BllResultFactory<AxisCurrentValue>.Sucess(axisCurrentValue);
+        }
+
+        public BllResult<int> WriteParameter(Variables variables)
+        {
+            int address  = variables.Address;
+            var result = HustMotion.SetVar(address, variables.Value);
+            return BllResultFactory<int>.Sucess(1);
+        }
+        public BllResult<int> SingleAxisMotion(AxisData axisData, int distValue)
+        {
+            throw new NotImplementedException();
+        }
+        public BllResult<int> MultipleAxisMotion(List<AxisData> axisDatas, int distValue)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}

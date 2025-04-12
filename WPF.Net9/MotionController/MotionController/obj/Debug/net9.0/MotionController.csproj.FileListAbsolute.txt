@@ -1,0 +1,15 @@
+C:\Users\Administrator\Desktop\MotionController\MotionController\bin\Debug\net9.0\MotionController.deps.json
+C:\Users\Administrator\Desktop\MotionController\MotionController\bin\Debug\net9.0\MotionController.dll
+C:\Users\Administrator\Desktop\MotionController\MotionController\bin\Debug\net9.0\MotionController.pdb
+C:\Users\Administrator\Desktop\MotionController\MotionController\bin\Debug\net9.0\CommonModels.dll
+C:\Users\Administrator\Desktop\MotionController\MotionController\bin\Debug\net9.0\CommonModels.pdb
+C:\Users\Administrator\Desktop\MotionController\MotionController\obj\Debug\net9.0\MotionController.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\MotionController\MotionController\obj\Debug\net9.0\MotionController.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\MotionController\MotionController\obj\Debug\net9.0\MotionController.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\MotionController\MotionController\obj\Debug\net9.0\MotionController.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\MotionController\MotionController\obj\Debug\net9.0\MotionController.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\MotionController\MotionController\obj\Debug\net9.0\MotionCo.BACF820F.Up2Date
+C:\Users\Administrator\Desktop\MotionController\MotionController\obj\Debug\net9.0\MotionController.dll
+C:\Users\Administrator\Desktop\MotionController\MotionController\obj\Debug\net9.0\refint\MotionController.dll
+C:\Users\Administrator\Desktop\MotionController\MotionController\obj\Debug\net9.0\MotionController.pdb
+C:\Users\Administrator\Desktop\MotionController\MotionController\obj\Debug\net9.0\ref\MotionController.dll

@@ -1,0 +1,187 @@
+﻿using csLTDMC;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using WinCC.Model.BllModel;
+using WinCC.Model.EnumsExtends;
+using WinCC.Model.MotionEntities;
+using WinCC.Model.MotionEnums;
+
+namespace WinCC.Motion.LtdMc
+{
+    public class LtdMcService 
+    {
+        private ushort _CardID = 0;
+        public BllResult<string> Init()
+        {
+            try
+            {
+                short num = LTDMC.dmc_board_init();//获取卡数量
+                if (num <= 0 || num > 8)
+                {
+                    return BllResultFactory<string>.Error("初始卡失败!");
+                }
+                ushort _num = 0;
+                ushort[] cardids = new ushort[8];
+                uint[] cardtypes = new uint[8];
+                short res = LTDMC.dmc_get_CardInfList(ref _num, cardtypes, cardids);
+                if (res != 0)
+                {
+                    return BllResultFactory<string>.Error("获取卡信息失败!");
+                }
+                _CardID = cardids[0];
+                return BllResultFactory<string>.Sucess("");
+            }
+            catch (Exception ex)
+            {
+                return BllResultFactory<string>.Error(ex.Message + "\r\n" + ex.StackTrace);
+            }           
+        }
+        public BllResult<short> Close()
+        {
+            return BllResultFactory<short>.Sucess(LTDMC.dmc_board_close());
+        }
+
+        public BllResult<string> EmergencyStop()
+        {
+            try
+            {
+                var iResult = LTDMC.dmc_emg_stop(_CardID);
+                if (iResult == 0)
+                    return BllResultFactory<string>.Sucess();
+                else
+                    return BllResultFactory<string>.Error(((LtdMcErrorEnum)iResult).ToString());
+            }
+            catch (Exception ex)
+            {
+                return BllResultFactory<string>.Error(ex.Message + "\r\n" + ex.StackTrace);
+            }            
+        }
+        public BllResult<string> GoHome(List<AxisData> axisDatas)
+        {
+            throw new NotImplementedException();
+        }       
+
+        public BllResult<int> StartManualMove(AxisData axisData, int distValue)
+        {
+            try
+            {
+                ushort statemachine = 0;
+                LTDMC.nmc_get_axis_state_machine(_CardID, (ushort)axisData.AxisType, ref statemachine);//获取轴状态机
+                if (statemachine != 4) //监控轴状态机的值，该值等于 4 表示轴状态机处于准备好状态
+                {
+                    return BllResultFactory<int>.Error(0,axisData.Remark + "轴未准备好");
+                }
+                ushort mode = 0;
+                LTDMC.dmc_pmove_unit(_CardID, (ushort)axisData.AxisType, distValue, mode);//执行点位运动
+                return BllResultFactory<int>.Sucess(1);
+            }
+            catch (Exception ex)
+            {
+                return BllResultFactory<int>.Error(-99,ex.Message + "\r\n" + ex.StackTrace);
+            }            
+        }
+
+        public BllResult<bool> ReadInBit(EmIBit iBitEnum)
+        {
+            try
+            {
+                var result = LTDMC.dmc_read_inbit(_CardID, (ushort)iBitEnum);
+                return BllResultFactory<bool>.Sucess(result == 1 ? true : false);
+            }
+            catch (Exception ex)
+            {
+                return BllResultFactory<bool>.Error(ex.Message + "\r\n" + ex.StackTrace);
+            }            
+        }
+
+        public BllResult<bool> ReadOutBit(EmOBit oBitEnum)
+        {
+            try
+            {
+                var result = LTDMC.dmc_read_outbit(_CardID, (ushort)oBitEnum);
+                return BllResultFactory<bool>.Sucess(result == 1 ? true : false);
+            }
+            catch (Exception ex)
+            {
+                return BllResultFactory<bool>.Error(ex.Message + "\r\n" + ex.StackTrace);
+            }                   
+        }
+
+        public BllResult<bool> WriteOutBit(EmOBit oBitEnum, EmLevel levelEnum)
+        {
+            try
+            {               
+                var iResult = LTDMC.dmc_write_outbit(_CardID, (ushort)oBitEnum, (ushort)levelEnum);
+                if (iResult == 0)
+                    return BllResultFactory<bool>.Sucess();
+                else
+                    return BllResultFactory<bool>.Error(Extends.ToEnumString<LtdMcErrorEnum>(iResult));                
+            }
+            catch (Exception ex)
+            {
+                return BllResultFactory<bool>.Error(ex.Message + "\r\n" + ex.StackTrace);
+            }
+        }
+
+        public BllResult<int> WriteAxisParameter(AxisData axisData)
+        {
+            try
+            {
+                ushort statemachine = 0;
+                LTDMC.nmc_get_axis_state_machine(_CardID, (ushort)axisData.AxisType, ref statemachine);//获取轴状态机
+                if (statemachine != 4) //监控轴状态机的值，该值等于 4 表示轴状态机处于准备好状态
+                {
+                    return BllResultFactory<int>.Error(0, axisData.Remark + "轴未准备好");
+                }
+                double MaxVel = axisData.JopAxis == true ? axisData.AxisParameter.MaxJobVel : axisData.AxisParameter.MaxVel;
+                var iResult = LTDMC.dmc_set_profile_unit(_CardID, (ushort)axisData.AxisType, axisData.AxisParameter.MinVel, MaxVel , axisData.AxisParameter.Tacc, axisData.AxisParameter.Tdec, axisData.AxisParameter.StopVel);
+                if (iResult == 0)
+                    return BllResultFactory<int>.Sucess(1);
+                else
+                    return BllResultFactory<int>.Error(iResult,Extends.ToEnumString<LtdMcErrorEnum>(iResult));
+            }
+            catch (Exception ex)
+            {
+                return BllResultFactory<int>.Error(-99,ex.Message + "\r\n" + ex.StackTrace);
+            }            
+        }
+
+        public BllResult<int> SingleAxisMotion(AxisData axisData, int distValue)
+        {
+            try
+            {
+                ushort statemachine = 0;
+                LTDMC.nmc_get_axis_state_machine(_CardID, (ushort)axisData.AxisType, ref statemachine);//获取轴状态机
+                if (statemachine != 4) //监控轴状态机的值，该值等于 4 表示轴状态机处于准备好状态
+                {
+                    return BllResultFactory<int>.Error(0, axisData.Remark + "轴未准备好");
+                }
+                ushort mode = 0;
+                LTDMC.dmc_pmove_unit(_CardID, (ushort)axisData.AxisType, distValue, mode);//执行点位运动
+                return BllResultFactory<int>.Sucess(1);
+            }           
+             catch (Exception ex)
+            {
+                return BllResultFactory<int>.Error(-99, ex.Message + "\r\n" + ex.StackTrace);
+            }
+        }
+
+        public BllResult<int> StopManualMove()
+        {
+            throw new NotImplementedException();
+        }
+
+        public BllResult<int> StartManualMove(List<AxisData> axisDatas, int distValue)
+        {
+            throw new NotImplementedException();
+        }
+
+        public BllResult<AxisCurrentValue> GetAxisCurrentValue()
+        {
+            throw new NotImplementedException();
+        }
+    }
+}

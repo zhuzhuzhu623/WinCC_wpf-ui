@@ -1,0 +1,363 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F68D257E-D0E2-48CC-BE63-10A772890BFB}|WinCC.Ui.csproj|C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\views\\cameraview\\cameradisplayview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F68D257E-D0E2-48CC-BE63-10A772890BFB}|WinCC.Ui.csproj|solutionrelative:views\\cameraview\\cameradisplayview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F68D257E-D0E2-48CC-BE63-10A772890BFB}|WinCC.Ui.csproj|C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F68D257E-D0E2-48CC-BE63-10A772890BFB}|WinCC.Ui.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F68D257E-D0E2-48CC-BE63-10A772890BFB}|WinCC.Ui.csproj|C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\views\\cameraview\\cameradisplayview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F68D257E-D0E2-48CC-BE63-10A772890BFB}|WinCC.Ui.csproj|solutionrelative:views\\cameraview\\cameradisplayview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F68D257E-D0E2-48CC-BE63-10A772890BFB}|WinCC.Ui.csproj|c:\\users\\administrator\\documents\\github\\zhuvision\\wpf.frame\\wincc.ui\\winlog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F68D257E-D0E2-48CC-BE63-10A772890BFB}|WinCC.Ui.csproj|solutionrelative:winlog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F68D257E-D0E2-48CC-BE63-10A772890BFB}|WinCC.Ui.csproj|C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F68D257E-D0E2-48CC-BE63-10A772890BFB}|WinCC.Ui.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F68D257E-D0E2-48CC-BE63-10A772890BFB}|WinCC.Ui.csproj|C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\resources\\brushes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F68D257E-D0E2-48CC-BE63-10A772890BFB}|WinCC.Ui.csproj|solutionrelative:resources\\brushes.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F68D257E-D0E2-48CC-BE63-10A772890BFB}|WinCC.Ui.csproj|C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\views\\cameraview\\cogdisplayview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F68D257E-D0E2-48CC-BE63-10A772890BFB}|WinCC.Ui.csproj|solutionrelative:views\\cameraview\\cogdisplayview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F68D257E-D0E2-48CC-BE63-10A772890BFB}|WinCC.Ui.csproj|C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\views\\cameraview\\cogdisplayview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F68D257E-D0E2-48CC-BE63-10A772890BFB}|WinCC.Ui.csproj|solutionrelative:views\\cameraview\\cogdisplayview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F68D257E-D0E2-48CC-BE63-10A772890BFB}|WinCC.Ui.csproj|C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F68D257E-D0E2-48CC-BE63-10A772890BFB}|WinCC.Ui.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{414B5C76-7C90-433E-99D4-0C254E10CFED}|..\\MotionController\\MotionController\\MotionController.csproj|c:\\users\\administrator\\documents\\github\\zhuvision\\wpf.frame\\motioncontroller\\motioncontroller\\imotionbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7687B704-CA2E-4490-8096-08C8A5B24490}|..\\WinCC.Bll\\WinCC.Bll.csproj|c:\\users\\administrator\\documents\\github\\zhuvision\\wpf.frame\\wincc.bll\\appsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F68D257E-D0E2-48CC-BE63-10A772890BFB}|WinCC.Ui.csproj|C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\winlog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F68D257E-D0E2-48CC-BE63-10A772890BFB}|WinCC.Ui.csproj|solutionrelative:winlog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7687B704-CA2E-4490-8096-08C8A5B24490}|..\\WinCC.Bll\\WinCC.Bll.csproj|c:\\users\\administrator\\documents\\github\\zhuvision\\wpf.frame\\wincc.bll\\bllservice\\dialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7687B704-CA2E-4490-8096-08C8A5B24490}|..\\WinCC.Bll\\WinCC.Bll.csproj|c:\\users\\administrator\\documents\\github\\zhuvision\\wpf.frame\\wincc.bll\\bllservice\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{89EC153D-BFEB-42BA-8A23-CD91F5950BB9}|..\\VisionOpenCv\\VisionOpenCv\\VisionOpenCv.csproj|c:\\users\\administrator\\documents\\github\\zhuvision\\wpf.frame\\visionopencv\\visionopencv\\opencv\\opencvservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{36BC97AF-A8E6-4941-969A-E91741C88D8F}|..\\Vision\\Vision\\Vision.csproj|c:\\users\\administrator\\documents\\github\\zhuvision\\wpf.frame\\vision\\vision\\camerapro\\cameravisionpro.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{414B5C76-7C90-433E-99D4-0C254E10CFED}|..\\MotionController\\MotionController\\MotionController.csproj|c:\\users\\administrator\\documents\\github\\zhuvision\\wpf.frame\\motioncontroller\\motioncontroller\\motionenums\\emaxistype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{414B5C76-7C90-433E-99D4-0C254E10CFED}|..\\MotionController\\MotionController\\MotionController.csproj|c:\\users\\administrator\\documents\\github\\zhuvision\\wpf.frame\\motioncontroller\\motioncontroller\\motionentitis\\axisparameter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{414B5C76-7C90-433E-99D4-0C254E10CFED}|..\\MotionController\\MotionController\\MotionController.csproj|c:\\users\\administrator\\documents\\github\\zhuvision\\wpf.frame\\motioncontroller\\motioncontroller\\motionentitis\\axisdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{414B5C76-7C90-433E-99D4-0C254E10CFED}|..\\MotionController\\MotionController\\MotionController.csproj|c:\\users\\administrator\\documents\\github\\zhuvision\\wpf.frame\\motioncontroller\\motioncontroller\\motionentitis\\axiscurrentvalue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF3CAA3A-07AB-49FA-9725-E79E033FC4DC}|..\\FileController\\FileController\\FileController.csproj|c:\\users\\administrator\\documents\\github\\zhuvision\\wpf.frame\\filecontroller\\filecontroller\\dapperdal\\dapperhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61FECA77-A07C-414F-BD80-3970B4233802}|..\\CommonModels\\CommonModels\\CommonModels.csproj|c:\\users\\administrator\\documents\\github\\zhuvision\\wpf.frame\\commonmodels\\commonmodels\\systemsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Brushes.xaml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\Resources\\Brushes.xaml",
+              "RelativeDocumentMoniker": "Resources\\Brushes.xaml",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\Resources\\Brushes.xaml",
+              "RelativeToolTip": "Resources\\Brushes.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-12T02:07:28.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-12T02:07:27.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CameraDisplayView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\Views\\CameraView\\CameraDisplayView.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\CameraView\\CameraDisplayView.xaml.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\Views\\CameraView\\CameraDisplayView.xaml.cs",
+              "RelativeToolTip": "Views\\CameraView\\CameraDisplayView.xaml.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAwDUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T01:47:58.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CameraDisplayView.xaml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\Views\\CameraView\\CameraDisplayView.xaml",
+              "RelativeDocumentMoniker": "Views\\CameraView\\CameraDisplayView.xaml",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\Views\\CameraView\\CameraDisplayView.xaml",
+              "RelativeToolTip": "Views\\CameraView\\CameraDisplayView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-12T01:47:41.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CogDisplayView.xaml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\Views\\CameraView\\CogDisplayView.xaml",
+              "RelativeDocumentMoniker": "Views\\CameraView\\CogDisplayView.xaml",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\Views\\CameraView\\CogDisplayView.xaml",
+              "RelativeToolTip": "Views\\CameraView\\CogDisplayView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-11T12:23:11.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-11T12:22:28.532Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WinLog.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\WinLog.xaml.cs",
+              "RelativeDocumentMoniker": "WinLog.xaml.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\WinLog.xaml.cs",
+              "RelativeToolTip": "WinLog.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T12:25:49.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CogDisplayView.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\Views\\CameraView\\CogDisplayView.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\CameraView\\CogDisplayView.xaml.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\Views\\CameraView\\CogDisplayView.xaml.cs",
+              "RelativeToolTip": "Views\\CameraView\\CogDisplayView.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T12:23:18.912Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAIwBQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T12:30:56.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "WinLog.xaml",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\WinLog.xaml",
+              "RelativeDocumentMoniker": "WinLog.xaml",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Ui\\WinLog.xaml",
+              "RelativeToolTip": "WinLog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-11T12:25:43.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IMotionBase.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\MotionController\\MotionController\\IMotionBase.cs",
+              "RelativeDocumentMoniker": "..\\MotionController\\MotionController\\IMotionBase.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\MotionController\\MotionController\\IMotionBase.cs",
+              "RelativeToolTip": "..\\MotionController\\MotionController\\IMotionBase.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAIwCwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T12:29:35.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Bll\\BllService\\Logger.cs",
+              "RelativeDocumentMoniker": "..\\WinCC.Bll\\BllService\\Logger.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Bll\\BllService\\Logger.cs",
+              "RelativeToolTip": "..\\WinCC.Bll\\BllService\\Logger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T12:30:12.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppSession.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Bll\\AppSession.cs",
+              "RelativeDocumentMoniker": "..\\WinCC.Bll\\AppSession.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Bll\\AppSession.cs",
+              "RelativeToolTip": "..\\WinCC.Bll\\AppSession.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAgwEIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T12:27:38.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "EmAxisType.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\MotionController\\MotionController\\MotionEnums\\EmAxisType.cs",
+              "RelativeDocumentMoniker": "..\\MotionController\\MotionController\\MotionEnums\\EmAxisType.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\MotionController\\MotionController\\MotionEnums\\EmAxisType.cs",
+              "RelativeToolTip": "..\\MotionController\\MotionController\\MotionEnums\\EmAxisType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T12:29:34.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CameraVisionPro.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\Vision\\Vision\\CameraPro\\CameraVisionPro.cs",
+              "RelativeDocumentMoniker": "..\\Vision\\Vision\\CameraPro\\CameraVisionPro.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\Vision\\Vision\\CameraPro\\CameraVisionPro.cs",
+              "RelativeToolTip": "..\\Vision\\Vision\\CameraPro\\CameraVisionPro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T12:29:40.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AxisParameter.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\MotionController\\MotionController\\MotionEntitis\\AxisParameter.cs",
+              "RelativeDocumentMoniker": "..\\MotionController\\MotionController\\MotionEntitis\\AxisParameter.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\MotionController\\MotionController\\MotionEntitis\\AxisParameter.cs",
+              "RelativeToolTip": "..\\MotionController\\MotionController\\MotionEntitis\\AxisParameter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T12:29:32.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AxisData.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\MotionController\\MotionController\\MotionEntitis\\AxisData.cs",
+              "RelativeDocumentMoniker": "..\\MotionController\\MotionController\\MotionEntitis\\AxisData.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\MotionController\\MotionController\\MotionEntitis\\AxisData.cs",
+              "RelativeToolTip": "..\\MotionController\\MotionController\\MotionEntitis\\AxisData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T12:29:32.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DapperHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\FileController\\FileController\\DapperDal\\DapperHelper.cs",
+              "RelativeDocumentMoniker": "..\\FileController\\FileController\\DapperDal\\DapperHelper.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\FileController\\FileController\\DapperDal\\DapperHelper.cs",
+              "RelativeToolTip": "..\\FileController\\FileController\\DapperDal\\DapperHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T12:28:42.305Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SystemSetting.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\CommonModels\\CommonModels\\SystemSetting.cs",
+              "RelativeDocumentMoniker": "..\\CommonModels\\CommonModels\\SystemSetting.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\CommonModels\\CommonModels\\SystemSetting.cs",
+              "RelativeToolTip": "..\\CommonModels\\CommonModels\\SystemSetting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T12:28:38.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OpenCvService.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\VisionOpenCv\\VisionOpenCv\\OpenCv\\OpenCvService.cs",
+              "RelativeDocumentMoniker": "..\\VisionOpenCv\\VisionOpenCv\\OpenCv\\OpenCvService.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\VisionOpenCv\\VisionOpenCv\\OpenCv\\OpenCvService.cs",
+              "RelativeToolTip": "..\\VisionOpenCv\\VisionOpenCv\\OpenCv\\OpenCvService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T12:29:57.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Dialog.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Bll\\BllService\\Dialog.cs",
+              "RelativeDocumentMoniker": "..\\WinCC.Bll\\BllService\\Dialog.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\WinCC.Bll\\BllService\\Dialog.cs",
+              "RelativeToolTip": "..\\WinCC.Bll\\BllService\\Dialog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T12:30:11.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AxisCurrentValue.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\MotionController\\MotionController\\MotionEntitis\\AxisCurrentValue.cs",
+              "RelativeDocumentMoniker": "..\\MotionController\\MotionController\\MotionEntitis\\AxisCurrentValue.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Documents\\GitHub\\ZhuVision\\WPF.Frame\\MotionController\\MotionController\\MotionEntitis\\AxisCurrentValue.cs",
+              "RelativeToolTip": "..\\MotionController\\MotionController\\MotionEntitis\\AxisCurrentValue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T12:29:31.274Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

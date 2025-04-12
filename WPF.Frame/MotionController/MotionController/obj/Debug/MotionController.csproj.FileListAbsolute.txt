@@ -1,0 +1,9 @@
+C:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\MotionController\MotionController\bin\Debug\MotionController.dll
+C:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\MotionController\MotionController\bin\Debug\MotionController.pdb
+C:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\MotionController\MotionController\bin\Debug\CommonModels.dll
+C:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\MotionController\MotionController\bin\Debug\CommonModels.pdb
+C:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\MotionController\MotionController\obj\Debug\MotionController.csproj.AssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\MotionController\MotionController\obj\Debug\MotionController.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\MotionController\MotionController\obj\Debug\MotionCo.BACF820F.Up2Date
+C:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\MotionController\MotionController\obj\Debug\MotionController.dll
+C:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\MotionController\MotionController\obj\Debug\MotionController.pdb

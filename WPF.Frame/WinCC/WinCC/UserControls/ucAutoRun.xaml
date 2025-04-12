@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="WinCC.UserControls.ucAutoRun"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WinCC.UserControls"
+               xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1005" d:DesignWidth="1320" Loaded="UserControl_Loaded">
+    <Grid>
+        <md:Card  Background="{DynamicResource MainWinBorder}" Margin="4 4 0 0">
+            <Grid >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="605"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+              
+            </Grid>
+        </md:Card>
+    </Grid>
+</UserControl>

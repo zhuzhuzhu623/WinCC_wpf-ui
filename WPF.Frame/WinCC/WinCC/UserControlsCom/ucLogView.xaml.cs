@@ -1,0 +1,58 @@
+﻿using CommonModels.Entities;
+using CommonModels.SystemEnums;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace WinCC.UserControlsCom
+{
+    /// <summary>
+    /// ucLogView.xaml 的交互逻辑
+    /// </summary>
+    public partial class ucLogView : UserControl
+    {
+
+        public ObservableCollection<LogContent> LogContents = new ObservableCollection<LogContent>();
+
+        public ucLogView()
+        {
+            InitializeComponent();
+        }
+
+        public void Log(string message, EmLogLevel logLevel)
+        {
+            if (LogContents == null)
+                LogContents = new ObservableCollection<LogContent>();
+            if (LogContents.Count > 500)
+                LogContents.Remove(LogContents[0]);
+
+            LogContent content = new LogContent();
+            content.LogLevel = logLevel.ToString();
+            content.Description = "";
+            content.Content = message;
+            content.LogViewTime = DateTime.Now.ToString("HH:mm:ss.fff");
+            //content.Created = DateTime.Now;
+            //content.Updated = DateTime.Now;
+            //content.CreatedBy = "";
+            LogContents.Add(content);
+            listLog.ItemsSource = null;
+            listLog.ItemsSource = LogContents;
+            listLog.SelectedIndex = LogContents.Count - 1;
+            // 假设你想滚动到垂直偏移量的位置
+            listLog.ScrollIntoView(listLog.Items[LogContents.Count - 1]); // 先确保可见性
+
+        }
+    }
+}

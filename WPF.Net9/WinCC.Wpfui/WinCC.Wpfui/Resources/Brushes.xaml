@@ -1,0 +1,39 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    
+    <!--#region 背景颜色-->
+    <LinearGradientBrush x:Key="LoginPaper" StartPoint="0.375,0.375" EndPoint="0,0.5">
+        <GradientStop  Color="#FF328EFF" Offset="0"/>
+        <GradientStop  Color="#FF1610F2" Offset="1"/>
+    </LinearGradientBrush>
+
+
+    <LinearGradientBrush x:Key="CheckoutPaper" StartPoint="0.5,0.3" EndPoint="0.5,1">
+        <GradientStop  Color="#0867FF" Offset="0"/>
+        <GradientStop  Color="#488DFD" Offset="0.5"/>
+        <GradientStop  Color="#FFFFFF" Offset="1"/>
+    </LinearGradientBrush>
+
+    <SolidColorBrush x:Key="MainWinBorder" Color="#808080" Opacity="0.07"/>
+
+    <SolidColorBrush x:Key="MainWinBorderHighRank" Color="#FFFFFF" Opacity="1"/>
+
+    <SolidColorBrush x:Key="ListBoxBackground" Color="#FFFFFF" />
+    
+    <SolidColorBrush x:Key="MainLine" Color="#509ef8"/>
+    
+    <SolidColorBrush x:Key="ListBoxLogSelected" Color="#acd1fc" Opacity="0.3"/>
+
+    <SolidColorBrush x:Key="BorderLine" Color="#509ef8"/>
+
+    <!--#endregion-->
+    
+    
+
+    <!--#region 字体颜色-->
+    <SolidColorBrush x:Key="TextForeground" Color="#000000"/>
+
+  
+    <!--#endregion-->
+</ResourceDictionary>

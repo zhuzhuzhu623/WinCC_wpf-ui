@@ -1,0 +1,95 @@
+﻿<Page x:Class="WinCC.Wpfui.Views.Pages.ProgramPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WinCC.Wpfui.Views.Pages"
+       xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml" 
+ xmlns:tray="http://schemas.lepo.co/wpfui/2022/xaml/tray"
+       xmlns:controls="clr-namespace:WinCC.Wpfui.Controls"
+   controls:PageControlDocumentation.DocumentationType="{x:Type ui:Snackbar}"
+    d:DataContext="{d:DesignInstance local:ProgramPage,
+                                     IsDesignTimeCreatable=False}"
+      mc:Ignorable="d" 
+      d:DesignHeight="1000" d:DesignWidth="1800"
+      Title="ProgramPage" TextOptions.TextFormattingMode="Display"  Background="{DynamicResource MainWinBorder}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="600"/>
+        </Grid.ColumnDefinitions>
+     
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <ui:Button Width="150" Height="200" Command="{Binding ViewModel.AutorunCommand}"/>
+          
+            <Grid Grid.Row="1">
+                <TabControl >
+                    <TabItem Header="导航"   >
+                        <Image Source="{Binding BitmapImage}"/>
+                    </TabItem>
+                    <TabItem Header="日志"  >
+                        <!--<ListView ItemsSource="{Binding ViewModel.LogContents}"  MaxHeight="400"      BorderThickness="0">
+                            <ListView.View>
+                                <ui:GridView>
+                                    <GridViewColumn DisplayMemberBinding="{Binding LogViewTime}" Header="Time" />
+                                    <GridViewColumn DisplayMemberBinding="{Binding LogLevel}" Header="LogLevel"/>
+                                    <GridViewColumn DisplayMemberBinding="{Binding Content}" Header="Content"/>
+                                </ui:GridView>
+                            </ListView.View>
+                        </ListView>-->
+                        <ListBox MaxHeight="400" x:Name="LogList" ItemsSource="{Binding ViewModel.LogContents, Mode=OneWay}"  SelectedIndex="{Binding ViewModel.SelectedLogIndex, Mode=OneWay}"   Style="{StaticResource LogListBox}">
+
+                        </ListBox>
+                    </TabItem>
+                </TabControl>
+            </Grid>
+        </Grid>
+       
+        <Grid Grid.Column="0" Margin="0 0 0 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="65"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid  Margin="10 3 10 3">
+                <Border  Background="{StaticResource MainWinBorderHighRank}" CornerRadius="5"/>
+                <StackPanel Orientation="Horizontal" Margin="10 0 0 0">
+                    <ui:Button Grid.Column="0" Command="{Binding ViewModel, Mode=OneWay}"  Content=""  Icon="{ui:ImageIcon 'pack://application:,,,/Asserts/Photos/newFile.png',Height=30,Width=30}"  Style="{StaticResource HeadButton}" />
+                    <ui:Button Grid.Column="0" Command="{Binding ViewModel, Mode=OneWay}"  Content=""  Icon="{ui:ImageIcon 'pack://application:,,,/Asserts/Photos/openFile.png',Height=30,Width=30}" Style="{StaticResource HeadButton}" />
+                    <ui:Button Grid.Column="0" Command="{Binding ViewModel, Mode=OneWay}"  Content=""  Icon="{ui:ImageIcon 'pack://application:,,,/Asserts/Photos/saveFile.png',Height=30,Width=30}"  Style="{StaticResource HeadButton}"/>
+                    <ui:Button Grid.Column="0" Command="{Binding ViewModel, Mode=OneWay}"  Content=""  Icon="{ui:ImageIcon 'pack://application:,,,/Asserts/Photos/saveAsFile.png',Height=30,Width=30}" Style="{StaticResource HeadButton}" />
+                </StackPanel>
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="140"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+              
+                <Grid Margin="10 3 0 3">
+                    <Border    Background="{StaticResource MainWinBorderHighRank}" CornerRadius="5"/>
+                    <ListBox Grid.Column="0" Margin="0 15 0 0" x:Name="Meals_List" ItemsSource="{Binding ViewModel.MenuOperations}"  Style="{StaticResource ProgramBaseListBox}" >
+                    </ListBox>
+                </Grid>
+                <Grid Grid.Column="1" Margin="10 3 10 3">
+                    <Border    Background="{StaticResource MainWinBorderHighRank}" CornerRadius="5"/>
+                    <TabControl  Grid.Column="1">
+                        <TabItem    Visibility="Collapsed">
+
+                        </TabItem>
+                        <TabItem    Visibility="Collapsed">
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+              
+            </Grid>
+
+           
+         
+        </Grid>
+    </Grid>
+</Page>

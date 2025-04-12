@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35828.75 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotionController", "MotionController\MotionController.csproj", "{B3DD1223-A291-4FCC-8109-F39883654BFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3DD1223-A291-4FCC-8109-F39883654BFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3DD1223-A291-4FCC-8109-F39883654BFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3DD1223-A291-4FCC-8109-F39883654BFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3DD1223-A291-4FCC-8109-F39883654BFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {087A3489-BE24-45B9-AB78-A6518443653B}
+	EndGlobalSection
+EndGlobal
