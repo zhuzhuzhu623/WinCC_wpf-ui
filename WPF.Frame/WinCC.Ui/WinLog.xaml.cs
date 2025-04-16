@@ -89,7 +89,7 @@ namespace WinCC.Ui
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-           // ucCameraFirstContent.Content = _cogDispalyView;
+         
         }
     }
 }

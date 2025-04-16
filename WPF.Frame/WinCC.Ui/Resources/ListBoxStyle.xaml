@@ -10,9 +10,9 @@
                     <Grid VerticalAlignment="Stretch" Height="26">
                         <Border x:Name="back" Background="Transparent" BorderThickness="0,0,0,1" BorderBrush="{DynamicResource ListBoxBackground}" CornerRadius="5" />
                         <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                            <Line x:Name="line"  Margin="3 3 0 3"  HorizontalAlignment="Left"  SnapsToDevicePixels="True" Stroke="{DynamicResource MainLine}" StrokeThickness="4"  X1="10"    X2="10" Y1="0" Y2="50"/>
+                            <Line x:Name="line"  Margin="3 3 0 3"  HorizontalAlignment="Left"  SnapsToDevicePixels="True" Stroke="{DynamicResource MainColor}" StrokeThickness="4"  X1="10"    X2="10" Y1="0" Y2="50"/>
                             <TextBlock x:Name="text1"  Margin="6 0 0 0" Text="{Binding LogViewTime}" Width="88" VerticalAlignment="Center" FontSize="14" Foreground="{StaticResource TextForeground}"  />
-                            <TextBlock  x:Name="text2" Margin="6 0 0 0" Text="{Binding LogLevel}" Width="40"  VerticalAlignment="Center" FontSize="14" Foreground="{StaticResource TextForeground}"  />
+                            <TextBlock  x:Name="text2" Margin="6 0 0 0" Text="{Binding LogLevel}" Width="60"  VerticalAlignment="Center" FontSize="14" Foreground="{StaticResource TextForeground}"  />
                             <TextBlock x:Name="text3" Margin="6 0 0 0" Text="{Binding Content}" Width="100" VerticalAlignment="Center" FontSize="14" Foreground="{StaticResource TextForeground}"   FontWeight="DemiBold" />
                         </StackPanel>
                     </Grid>
@@ -22,14 +22,14 @@
                             <Setter TargetName="back" Property="BorderThickness" Value="0" />
                             <Setter TargetName="text1" Property="Foreground" Value="{DynamicResource TextForeground}"/>
                             <Setter TargetName="text2" Property="Foreground" Value="{DynamicResource TextForeground}"/>
-                            <Setter TargetName="line" Property="Stroke" Value="{DynamicResource BorderLine}"/>
+                            <Setter TargetName="line" Property="Stroke" Value="White"/>
                             <!--<Setter TargetName="line" Property="Stroke" Value="{StaticResource MainWinListLine}"/>-->
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="True">
                             <Setter TargetName="back" Property="Background" Value="{DynamicResource ListBoxLogSelected}" />
                             <Setter TargetName="back" Property="BorderThickness" Value="0" />
                             <Setter TargetName="text1" Property="Foreground" Value="{DynamicResource TextForeground}"/>
-                            <Setter TargetName="line" Property="Stroke" Value="{DynamicResource BorderLine}"/>
+                            <Setter TargetName="line" Property="Stroke" Value="{DynamicResource MainColor}"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

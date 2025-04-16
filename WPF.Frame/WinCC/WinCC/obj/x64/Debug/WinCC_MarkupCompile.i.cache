@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\WPF.Frame\WinCC\WinCC\obj\x64\Debug\
+E:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC\WinCC\obj\x64\Debug\
 WinCC
 none
 false
 DEBUG;TRACE
-D:\WPF.Frame\WinCC\WinCC\App.xaml
-14529440964
+E:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC\WinCC\App.xaml
+20-672773881
 
-261546208386
-441171211907
-Controls\UcControls\NumUpDown.xaml;Controls\UcControls\ProgressView.xaml;MainWindow.xaml;Resources\Brushes.xaml;Resources\ButtonStyle.xaml;Resources\ListBoxStyle.xaml;Resources\TextBlockBox.xaml;UserControlsCom\ucLogView.xaml;UserControls\ucAutoRun.xaml;UserControls\ucMaintain.xaml;UserControls\ucProgram.xaml;VisionProView\ucCameraView.xaml;VisionProView\ucCogDisplay.xaml;WinLog.xaml;
+31-1749896975
+431899488283
+Controls\UcControls\NumUpDown.xaml;Controls\UcControls\ProgressView.xaml;FormDialog\formCameraData.xaml;MainWindow.xaml;Resources\Brushes.xaml;Resources\ButtonStyle.xaml;Resources\DataGridStyle.xaml;Resources\ListBoxStyle.xaml;Resources\TextBlockBox.xaml;UserControlsCom\ucLogView.xaml;UserControlsCom\ucNavigationView.xaml;UserControlsCom\ucOperationView.xaml;UserControls\ucAutoRun.xaml;UserControls\ucFactory.xaml;UserControls\ucMaintain.xaml;UserControls\ucProgram.xaml;VisionProView\ucCameraListView.xaml;VisionProView\ucCameraView.xaml;VisionProView\ucCogDisplay.xaml;WinLog.xaml;
 
-True
+False
 

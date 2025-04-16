@@ -4,13 +4,22 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WinCC.Ui"
+           xmlns:local1="clr-namespace:WinCC.Ui.Views.CameraView"
         mc:Ignorable="d"
-        Title="WinLog" Height="400" Width="700" Loaded="Window_Loaded">
+        Title="WinLog" Height="500" Width="900" Loaded="Window_Loaded">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+
+        </Grid.ColumnDefinitions>
         <Button x:Name="btnLogin"  Content="登录" Width="120" Height="40" Foreground="{DynamicResource TextForeground}" Click="btnLogin_Click"/>
         <StackPanel Margin="20 0 0 10" VerticalAlignment="Bottom">
             <Label Content="等待初始化......" Name="lblLoad" FontSize="14" Foreground="{DynamicResource TextForeground}" />
         </StackPanel>
-      
+
+        <Grid Grid.Column="1">
+            <ContentControl x:Name="ucCameraFirstContent" />
+        </Grid>
     </Grid>
 </Window>

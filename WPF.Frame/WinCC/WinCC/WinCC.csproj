@@ -38,7 +38,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
-    <OutputPath>bin\x64\Debug\</OutputPath>
+    <OutputPath>C:\Users\Administrator\Desktop\WinCC_Net9_Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x64</PlatformTarget>
@@ -460,10 +460,6 @@
     <ProjectReference Include="..\..\Vision\Vision\Vision.csproj">
       <Project>{36bc97af-a8e6-4941-969a-e91741c88d8f}</Project>
       <Name>Vision</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WinCC.Bll\WinCC.Bll.csproj">
-      <Project>{7687b704-ca2e-4490-8096-08c8a5b24490}</Project>
-      <Name>WinCC.Bll</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

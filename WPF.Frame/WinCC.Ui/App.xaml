@@ -15,6 +15,8 @@
                 <ResourceDictionary Source="Resources/TextBlockBox.xaml"/>
                 <ResourceDictionary Source="Resources/ListBoxStyle.xaml"/>
                 <ResourceDictionary Source="Resources/DataGridStyle.xaml"/>
+                <ResourceDictionary Source="Resources/TabControlStyle.xaml"/>
+                <ResourceDictionary Source="Resources/ExpanderStyle.xaml"/> 
             </ResourceDictionary.MergedDictionaries>
 
         </ResourceDictionary>

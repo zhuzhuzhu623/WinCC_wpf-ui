@@ -1,8 +1,14 @@
 ﻿
-FC:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\WinCC.Ui\App.xaml;;
-FC:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\WinCC.Ui\MainWindow.xaml;;
-FC:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\WinCC.Ui\Views\CameraView\CameraDisplayView.xaml;;
-FC:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\WinCC.Ui\Views\CameraView\CogDisplayView.xaml;;
-FC:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\WinCC.Ui\Views\Pages\ProgramPage.xaml;;
-FC:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\WinCC.Ui\WinLog.xaml;;
+FE:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC.Ui\App.xaml;;
+FE:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC.Ui\MainWindow.xaml;;
+FE:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC.Ui\Views\CameraView\CameraDisplayView.xaml;;
+FE:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC.Ui\Views\CameraView\CogDisplayView.xaml;;
+FE:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC.Ui\Views\CameraView\NavigationImageView.xaml;;
+FE:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC.Ui\Views\CommonView\LogView.xaml;;
+FE:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC.Ui\Views\CommonView\OperationManualView.xaml;;
+FE:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC.Ui\Views\CommonView\OperationRunView.xaml;;
+FE:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC.Ui\Views\Pages\AutoRun.xaml;;
+FE:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC.Ui\Views\Pages\MaintainPage.xaml;;
+FE:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC.Ui\Views\Pages\ProgramPage.xaml;;
+FE:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC.Ui\WinLog.xaml;;
 

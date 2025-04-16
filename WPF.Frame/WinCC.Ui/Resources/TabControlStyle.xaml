@@ -1,0 +1,40 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"   xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml">
+
+
+ 
+    <Style x:Key="MaintainTabItem" TargetType="TabItem" >   
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TabItem">
+                    <Grid Margin="0 3 0 3" Height="48" Width="200">
+                        <Border Name="ABorder" Background="Transparent" CornerRadius="5" />
+                        <StackPanel Orientation="Horizontal" Height="42">
+                            <Border Name="LeftBorder" Background="{DynamicResource MainColor}" CornerRadius="12 0 0 12" Margin="0" Width="12" Height="40"/>
+                            <Border  x:Name="Border" CornerRadius="3" Background="Transparent" Width="188">
+                                <ContentPresenter ContentSource="Header"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                <!--<Label Content="{TemplateBinding Header}" FontSize="42" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>-->
+                            </Border>
+                        
+                            <!--<Border Name="RightBorder" Background="{DynamicResource MainColor}" CornerRadius="0 12 12 0" Margin="0" Width="12" Height="36"/>-->
+                        </StackPanel>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter TargetName="Border" Property="Background" Value="{DynamicResource MainColorOpacity}"/>
+                            <Setter TargetName="LeftBorder" Property="Background" Value="White"/>
+                            <Setter TargetName="LeftBorder" Property="BorderBrush" Value="{DynamicResource MainColor}"/>
+                            <Setter TargetName="LeftBorder" Property="BorderThickness" Value="1"/>
+                            <!--<Setter TargetName="RightBorder" Property="Background" Value="White"/>
+                            <Setter TargetName="RightBorder" Property="BorderBrush" Value="{DynamicResource MainColor}"/>
+                            <Setter TargetName="RightBorder" Property="BorderThickness" Value="1"/>-->
+                        </Trigger>
+                        <Trigger Property="IsSelected" Value="False">
+                            <Setter TargetName="Border" Property="Background" Value="Transparent"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

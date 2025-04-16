@@ -1,0 +1,40 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\CameraView\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E6795CBF-CCFA-4324-A550-2D7EC9FEC16B}|CameraView\\CameraView.csproj|c:\\users\\administrator\\desktop\\cameraview\\cameraview\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6795CBF-CCFA-4324-A550-2D7EC9FEC16B}|CameraView\\CameraView.csproj|solutionrelative:cameraview\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [\u8BBE\u8BA1]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\CameraView\\CameraView\\Form1.cs",
+              "RelativeDocumentMoniker": "CameraView\\Form1.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\CameraView\\CameraView\\Form1.cs [\u8BBE\u8BA1]",
+              "RelativeToolTip": "CameraView\\Form1.cs [\u8BBE\u8BA1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T05:31:16.701Z",
+              "EditorCaption": " [\u8BBE\u8BA1]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

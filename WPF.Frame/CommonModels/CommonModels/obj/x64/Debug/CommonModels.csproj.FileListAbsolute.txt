@@ -4,3 +4,9 @@ C:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\CommonModels\CommonM
 C:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\CommonModels\CommonModels\obj\x64\Debug\CommonModels.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\CommonModels\CommonModels\obj\x64\Debug\CommonModels.dll
 C:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\CommonModels\CommonModels\obj\x64\Debug\CommonModels.pdb
+E:\GitHUb\WinCC_wpf-ui\WPF.Frame\CommonModels\CommonModels\bin\x64\Debug\CommonModels.dll
+E:\GitHUb\WinCC_wpf-ui\WPF.Frame\CommonModels\CommonModels\bin\x64\Debug\CommonModels.pdb
+E:\GitHUb\WinCC_wpf-ui\WPF.Frame\CommonModels\CommonModels\obj\x64\Debug\CommonModels.csproj.AssemblyReference.cache
+E:\GitHUb\WinCC_wpf-ui\WPF.Frame\CommonModels\CommonModels\obj\x64\Debug\CommonModels.csproj.CoreCompileInputs.cache
+E:\GitHUb\WinCC_wpf-ui\WPF.Frame\CommonModels\CommonModels\obj\x64\Debug\CommonModels.dll
+E:\GitHUb\WinCC_wpf-ui\WPF.Frame\CommonModels\CommonModels\obj\x64\Debug\CommonModels.pdb

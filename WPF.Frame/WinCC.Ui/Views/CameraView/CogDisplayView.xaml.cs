@@ -1,8 +1,11 @@
-﻿using CommonModels.SystemEntities;
+﻿using Cognex.VisionPro;
+using CommonModels.SystemEntities;
+using CommonModels.SystemEnums;
 using MotionController.MotionEntities;
 using MotionController.MotionEnums;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -16,6 +19,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WinCC.Bll;
+using WinCC.Bll.BllService;
 
 namespace WinCC.Ui.Views.CameraView
 {
@@ -24,6 +28,10 @@ namespace WinCC.Ui.Views.CameraView
     /// </summary>
     public partial class CogDisplayView : UserControl
     {
+        CogCircle Circle;
+        CogLineSegment VelLine = new CogLineSegment();
+        CogLineSegment HorLine = new CogLineSegment();
+
         public CameraData CameraData { get; set; }
         public CogDisplayView(CameraData camera)
         {
@@ -36,9 +44,48 @@ namespace WinCC.Ui.Views.CameraView
                 if (result != null)
                     displayView.StartLiveDisplay(result.Operator, false);
             }
+            if (CameraData != null)
+            {
+                HorLine.StartX = 0;
+                HorLine.StartY = CameraData.Height / 2;
+                HorLine.EndX = CameraData.Width;
+                HorLine.EndY = CameraData.Height / 2;
+                displayView.InteractiveGraphics.Add(HorLine, "H", true);
+
+                VelLine.StartX = CameraData.Width / 2;
+                VelLine.StartY = 0;
+                VelLine.EndX = CameraData.Width / 2;
+                VelLine.EndY = CameraData.Height;
+                displayView.InteractiveGraphics.Add(VelLine, "V", true);
+
+                Circle = new CogCircle();
+                Circle.CenterX = CameraData.Width / 2;
+                Circle.CenterY = CameraData.Height / 2;
+                Circle.Radius = 50;
+                Circle.Color = CogColorConstants.Red;
+                Circle.LineWidthInScreenPixels = 2;
+                Circle.GraphicDOFEnable = CogCircleDOFConstants.Radius;
+                displayView.InteractiveGraphics.Add(Circle, "C", true);
+            }
 
         }
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            //displayView.GridEnabled = true;
 
+            //displayView.SubPixelGridEnabled = true;
+            //displayView.InteractiveGraphicTipsEnabled = true;
+            //displayView.MaintainImageRegion = true;
+            //displayView.MultiSelectionEnabled = false;
+
+            //displayView.AutoFitWithGraphics = false;
+            displayView.BackColor = ColorTranslator.FromHtml("#ffc080");
+            displayView.MouseMode = Cognex.VisionPro.Display.CogDisplayMouseModeConstants.UserDefined;
+            displayView.PopupMenu = false;
+            displayView.AutoFit = true;
+            
+           
+        }
         private void cogdisplay_MouseMove(object sender, System.Windows.Forms.MouseEventArgs e)
         {
             MouseMoveForMotion(e.X, e.Y);
@@ -66,7 +113,7 @@ namespace WinCC.Ui.Views.CameraView
             int dirX = 0;
             int dirY = 0;
             int moveSpeed = 0;
-            var i = GetMoveCursor(resultX, resultY, visionWidth, visionHeight, ref x, ref y, ref dirX, ref dirY, ref moveSpeed);
+            var i = GetMoveCursor(resultX, resultY, visionWidth, visionHeight, ref x, ref y, ref dirX, ref dirY, ref moveSpeed);         
             switch (moveSpeed)
             {
                 case 0:
@@ -76,9 +123,11 @@ namespace WinCC.Ui.Views.CameraView
                     displayView.UserDefinedMouseCursor = ImageResources.MediumCursor[i];
                     break;
                 case 2:
-                    displayView.UserDefinedMouseCursor = ImageResources.FastCursor[i];
+                   displayView.UserDefinedMouseCursor = ImageResources.FastCursor[i];
                     break;
             }
+
+           
         }
 
         /// <summary>
@@ -222,6 +271,5 @@ namespace WinCC.Ui.Views.CameraView
             }
             return iCursor;
         }
-
     }
 }

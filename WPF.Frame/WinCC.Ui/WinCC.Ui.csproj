@@ -37,7 +37,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <DebugSymbols>true</DebugSymbols>
-    <OutputPath>bin\x64\Debug\</OutputPath>
+    <OutputPath>C:\Users\Administrator\Desktop\WinCC_Net9_Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <DebugType>full</DebugType>
     <PlatformTarget>x64</PlatformTarget>
@@ -84,10 +84,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\en6800-debug-vp91\Cognex.VisionPro.AutoSelect.dll</HintPath>
     </Reference>
-    <Reference Include="Cognex.VisionPro.Barcode">
+    <Reference Include="Cognex.VisionPro.Barcode, Version=59.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\en6800-debug-vp91\Cognex.VisionPro.Barcode.dll</HintPath>
     </Reference>
-    <Reference Include="Cognex.VisionPro.Barcode.Controls">
+    <Reference Include="Cognex.VisionPro.Barcode.Controls, Version=59.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\en6800-debug-vp91\Cognex.VisionPro.Barcode.Controls.dll</HintPath>
     </Reference>
     <Reference Include="Cognex.VisionPro.Blob, Version=61.1.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
@@ -375,10 +377,12 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\en6800-debug-vp91\Cognex.VisionPro.ToolGroup.Controls.dll</HintPath>
     </Reference>
-    <Reference Include="Cognex.VisionPro.TwoDSymbol">
+    <Reference Include="Cognex.VisionPro.TwoDSymbol, Version=59.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\en6800-debug-vp91\Cognex.VisionPro.TwoDSymbol.dll</HintPath>
     </Reference>
-    <Reference Include="Cognex.VisionPro.TwoDSymbol.Controls">
+    <Reference Include="Cognex.VisionPro.TwoDSymbol.Controls, Version=59.0.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>D:\en6800-debug-vp91\Cognex.VisionPro.TwoDSymbol.Controls.dll</HintPath>
     </Reference>
     <Reference Include="Cognex.VisionPro3D, Version=61.1.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
@@ -403,6 +407,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Drawing.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\WinCC\packages\System.Drawing.Common.9.0.1\lib\net462\System.Drawing.Common.dll</HintPath>
     </Reference>
@@ -442,6 +447,24 @@
     <Compile Include="Views\CameraView\CogDisplayView.xaml.cs">
       <DependentUpon>CogDisplayView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\CameraView\NavigationImageView.xaml.cs">
+      <DependentUpon>NavigationImageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CommonView\LogView.xaml.cs">
+      <DependentUpon>LogView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CommonView\OperationManualView.xaml.cs">
+      <DependentUpon>OperationManualView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CommonView\OperationRunView.xaml.cs">
+      <DependentUpon>OperationRunView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\AutoRun.xaml.cs">
+      <DependentUpon>AutoRun.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\MaintainPage.xaml.cs">
+      <DependentUpon>MaintainPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Pages\ProgramPage.xaml.cs">
       <DependentUpon>ProgramPage.xaml</DependentUpon>
     </Compile>
@@ -476,6 +499,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Resources\ExpanderStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\TabControlStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Resources\TextBlockBox.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -485,6 +516,30 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\CameraView\CogDisplayView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CameraView\NavigationImageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CommonView\LogView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CommonView\OperationManualView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\CommonView\OperationRunView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\AutoRun.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\MaintainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -646,7 +701,9 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Asserts\Photos\" />
+    <Resource Include="Asserts\Photos\RightView.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CommonModels\CommonModels\CommonModels.csproj">
@@ -669,6 +726,78 @@
       <Project>{7687b704-ca2e-4490-8096-08c8a5b24490}</Project>
       <Name>WinCC.Bll</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asserts\Photos\newPro.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Asserts\Photos\openPro.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Asserts\Photos\saveAsPro.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Asserts\Photos\savePro.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asserts\Photos\reset.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Asserts\Photos\runPro.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asserts\Photos\boardOut.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Asserts\Photos\clampTrack.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Asserts\Photos\flipTrack.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Asserts\Photos\moveLocation.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Asserts\Photos\readBarcode.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Asserts\Photos\scanImage.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asserts\Photos\widthTrack.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asserts\Photos\boardIn.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asserts\Photos\standBy.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asserts\Photos\goHome.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asserts\Photos\IO.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Asserts\Photos\setMachine.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

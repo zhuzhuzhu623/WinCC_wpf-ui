@@ -5,8 +5,6 @@ VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinCC", "WinCC\WinCC.csproj", "{3D8D6B3D-3D68-4267-BE25-2CEB6F06897F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinCC.Bll", "WinCC.Bll\WinCC.Bll.csproj", "{7687B704-CA2E-4490-8096-08C8A5B24490}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonModels", "..\CommonModels\CommonModels\CommonModels.csproj", "{61FECA77-A07C-414F-BD80-3970B4233802}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotionController", "..\MotionController\MotionController\MotionController.csproj", "{414B5C76-7C90-433E-99D4-0C254E10CFED}"
@@ -16,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileController", "..\FileController\FileController\FileController.csproj", "{FF3CAA3A-07AB-49FA-9725-E79E033FC4DC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisionOpenCv", "..\VisionOpenCv\VisionOpenCv\VisionOpenCv.csproj", "{89EC153D-BFEB-42BA-8A23-CD91F5950BB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinCC.Bll", "..\WinCC.Bll\WinCC.Bll.csproj", "{7687B704-CA2E-4490-8096-08C8A5B24490}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,14 +33,6 @@ Global
 		{3D8D6B3D-3D68-4267-BE25-2CEB6F06897F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3D8D6B3D-3D68-4267-BE25-2CEB6F06897F}.Release|x64.ActiveCfg = Release|x64
 		{3D8D6B3D-3D68-4267-BE25-2CEB6F06897F}.Release|x64.Build.0 = Release|x64
-		{7687B704-CA2E-4490-8096-08C8A5B24490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7687B704-CA2E-4490-8096-08C8A5B24490}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7687B704-CA2E-4490-8096-08C8A5B24490}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{7687B704-CA2E-4490-8096-08C8A5B24490}.Debug|x64.Build.0 = Debug|Any CPU
-		{7687B704-CA2E-4490-8096-08C8A5B24490}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7687B704-CA2E-4490-8096-08C8A5B24490}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7687B704-CA2E-4490-8096-08C8A5B24490}.Release|x64.ActiveCfg = Release|Any CPU
-		{7687B704-CA2E-4490-8096-08C8A5B24490}.Release|x64.Build.0 = Release|Any CPU
 		{61FECA77-A07C-414F-BD80-3970B4233802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{61FECA77-A07C-414F-BD80-3970B4233802}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61FECA77-A07C-414F-BD80-3970B4233802}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -81,6 +73,14 @@ Global
 		{89EC153D-BFEB-42BA-8A23-CD91F5950BB9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{89EC153D-BFEB-42BA-8A23-CD91F5950BB9}.Release|x64.ActiveCfg = Release|Any CPU
 		{89EC153D-BFEB-42BA-8A23-CD91F5950BB9}.Release|x64.Build.0 = Release|Any CPU
+		{7687B704-CA2E-4490-8096-08C8A5B24490}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7687B704-CA2E-4490-8096-08C8A5B24490}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7687B704-CA2E-4490-8096-08C8A5B24490}.Debug|x64.ActiveCfg = Debug|x64
+		{7687B704-CA2E-4490-8096-08C8A5B24490}.Debug|x64.Build.0 = Debug|x64
+		{7687B704-CA2E-4490-8096-08C8A5B24490}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7687B704-CA2E-4490-8096-08C8A5B24490}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7687B704-CA2E-4490-8096-08C8A5B24490}.Release|x64.ActiveCfg = Release|x64
+		{7687B704-CA2E-4490-8096-08C8A5B24490}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\WinCC.Ui\obj\x64\Debug\
+E:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC.Ui\obj\x64\Debug\
 WinCC.Ui
 none
 false
 DEBUG;TRACE
-C:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\WinCC.Ui\App.xaml
-101129866112
+E:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC.Ui\App.xaml
+18518109013
 
-11495331340
-106-599849009
-MainWindow.xaml;Resources\Brushes.xaml;Resources\ButtonStyle.xaml;Resources\DataGridStyle.xaml;Resources\ListBoxStyle.xaml;Resources\TextBlockBox.xaml;Views\CameraView\CameraDisplayView.xaml;Views\CameraView\CogDisplayView.xaml;Views\Pages\ProgramPage.xaml;WinLog.xaml;
+17-851889694
+107-1074732701
+MainWindow.xaml;Resources\Brushes.xaml;Resources\ButtonStyle.xaml;Resources\DataGridStyle.xaml;Resources\ListBoxStyle.xaml;Resources\ExpanderStyle.xaml;Resources\TabControlStyle.xaml;Resources\TextBlockBox.xaml;Views\CameraView\CameraDisplayView.xaml;Views\CameraView\CogDisplayView.xaml;Views\CameraView\NavigationImageView.xaml;Views\CommonView\LogView.xaml;Views\CommonView\OperationManualView.xaml;Views\CommonView\OperationRunView.xaml;Views\Pages\AutoRun.xaml;Views\Pages\MaintainPage.xaml;Views\Pages\ProgramPage.xaml;WinLog.xaml;
 
 False
 

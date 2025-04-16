@@ -15,7 +15,7 @@
         <GradientStop  Color="#FFFFFF" Offset="1"/>
     </LinearGradientBrush>
 
-    <SolidColorBrush x:Key="MainWinBorder" Color="#808080" Opacity="0.07"/>
+    <SolidColorBrush x:Key="MainWinBorder" Color="#808080" Opacity="0.05"/>
 
     <SolidColorBrush x:Key="MainWinBorderHighRank" Color="#FFFFFF" Opacity="1"/>
 
@@ -29,6 +29,10 @@
 
 
     <SolidColorBrush x:Key="DataGridHeader" Color="#509ef8" Opacity="0.5"/>
+
+    <SolidColorBrush x:Key="MainColor" Color="#ffc080" Opacity="1"/>
+
+    <SolidColorBrush x:Key="MainColorOpacity" Color="#ffc080" Opacity="0.3"/>
 
     <!--#endregion-->
     

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\WinCC\WinCC\obj\x64\Debug\
+E:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC\WinCC\obj\x64\Debug\
 WinCC
 none
 false
 DEBUG;TRACE
-C:\Users\Administrator\Documents\GitHub\ZhuVision\WPF.Frame\WinCC\WinCC\App.xaml
+E:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC\WinCC\App.xaml
 20-672773881
 
-30-781026937
-44261459690
+31-1749896975
+431899488283
 Controls\UcControls\NumUpDown.xaml;Controls\UcControls\ProgressView.xaml;FormDialog\formCameraData.xaml;MainWindow.xaml;Resources\Brushes.xaml;Resources\ButtonStyle.xaml;Resources\DataGridStyle.xaml;Resources\ListBoxStyle.xaml;Resources\TextBlockBox.xaml;UserControlsCom\ucLogView.xaml;UserControlsCom\ucNavigationView.xaml;UserControlsCom\ucOperationView.xaml;UserControls\ucAutoRun.xaml;UserControls\ucFactory.xaml;UserControls\ucMaintain.xaml;UserControls\ucProgram.xaml;VisionProView\ucCameraListView.xaml;VisionProView\ucCameraView.xaml;VisionProView\ucCogDisplay.xaml;WinLog.xaml;
 
-False
+True
 

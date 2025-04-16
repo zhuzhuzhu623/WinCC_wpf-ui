@@ -73,8 +73,8 @@ namespace WinCC.Bll
         /// <returns></returns>
         public static BllResult InitVision()
         {
-            //CameraVisionPro = new CameraVisionPro();
-            //CameraVisionPro.InitCamera(null);
+            CameraVisionPro = new CameraVisionPro();
+            CameraVisionPro.InitCamera(SystemSetting.CameraDatas);
             return BllResultFactory.Sucess();
         }
 
@@ -84,9 +84,9 @@ namespace WinCC.Bll
         /// <returns></returns>
         public static BllResult InitMotion()
         {
-            Motion = new HustService();
             return BllResultFactory.Sucess();
-            
+
+            Motion = new HustService();           
             var result = Motion.Init();
             if (result.Success)
                 return BllResultFactory.Sucess();

@@ -8,23 +8,26 @@
         mc:Ignorable="d"
          d:DesignHeight="450" d:DesignWidth="450" Loaded="UserControl_Loaded">
     <Grid>
-        <ui:TabView TabStripPlacement="Bottom" >
+        <ui:TabView TabStripPlacement="Bottom" BorderThickness="0.8" BorderBrush="{DynamicResource MainColor}">
             <TabItem>
                 <TabItem.Header>
                     <StackPanel Orientation="Horizontal">
                         <ui:SymbolIcon Margin="0,0,6,0" Symbol="XboxConsole24" />
-                        <TextBlock Text="Hello" />
+                        <TextBlock Text="相机" />
                     </StackPanel>
                 </TabItem.Header>
                 <Grid>
                     <ContentControl x:Name="CameraFirst" />
+                    <!--<WindowsFormsHost Grid.Row="0" x:Name="hostView">
+                      
+                    </WindowsFormsHost>-->
                 </Grid>
             </TabItem>
             <TabItem >
                 <TabItem.Header>
                     <StackPanel Orientation="Horizontal">
                         <ui:SymbolIcon Margin="0,0,6,0" Symbol="StoreMicrosoft16" />
-                        <TextBlock Text="The cake" />
+                        <TextBlock Text="相机" />
                     </StackPanel>
                 </TabItem.Header>
                 <Grid>

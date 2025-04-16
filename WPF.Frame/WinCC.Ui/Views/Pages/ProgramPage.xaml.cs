@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WinCC.Ui.Views.CameraView;
+using WinCC.Ui.Views.CommonView;
+using Wpf.Ui.Controls;
 
 namespace WinCC.Ui.Views.Pages
 {
@@ -24,12 +26,21 @@ namespace WinCC.Ui.Views.Pages
         public ProgramPage()
         {
             InitializeComponent();
+
+           
         }
       
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
+            UcOperationRun.Content = OperationRunView.GetWindow();
+            UcCameraDisplay.Content = CameraDisplayView.GetWindow();
+            UcNavigationView.Content = NavigationImageView.GetWindow();
+            UcLogView.Content = LogView.GetWindow();
+        }
+
+        private void BtnNewPro_Click(object sender, RoutedEventArgs e)
+        {
           
         }
-        
     }
 }

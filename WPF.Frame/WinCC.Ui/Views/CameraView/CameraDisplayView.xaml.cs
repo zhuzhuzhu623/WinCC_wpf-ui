@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+
 using WinCC.Bll;
 
 namespace WinCC.Ui.Views.CameraView
@@ -25,6 +26,7 @@ namespace WinCC.Ui.Views.CameraView
         private static readonly object _lockObj = new object();
 
         CogDisplayView cogDisplayViewFirst;
+
         /// <summary>
         /// 获取窗体实例
         /// </summary>
@@ -47,17 +49,19 @@ namespace WinCC.Ui.Views.CameraView
         public CameraDisplayView()
         {
             InitializeComponent();
+
             CameraData camera = null;
             if (AppSession.SystemSetting != null)
             {
                 camera = AppSession.SystemSetting.CameraDatas[0];
-            }           
+            }
             cogDisplayViewFirst = new CogDisplayView(camera);
+             
         }
       
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
         {
-            CameraFirst.Content = cogDisplayViewFirst;  
+            CameraFirst.Content = cogDisplayViewFirst;
         }
     }
 }

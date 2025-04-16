@@ -4,11 +4,60 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:WinCC.Ui.Views.Pages"
+      xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml" 
       mc:Ignorable="d" 
-    d:DesignHeight="900" d:DesignWidth="1700"
-      Title="ProgramPage" Loaded="Page_Loaded" Background="AliceBlue">
+    d:DesignHeight="880" d:DesignWidth="1700" 
+      Title="ProgramPage" Loaded="Page_Loaded">
+    <Grid x:Name="gridView">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <ContentControl x:Name="UcOperationRun" />
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="720"/>
+            </Grid.ColumnDefinitions>
 
-    <Grid>
-      
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <ContentControl x:Name="UcCameraDisplay" />
+
+                <Grid Grid.Row="1">
+                    <ui:TabView TabStripPlacement="Right"  BorderThickness="0.8" BorderBrush="{DynamicResource MainColor}">
+                        <TabItem x:Name="TabNavigationView"  Width="100" >
+                            <TabItem.Header>
+                                <StackPanel Orientation="Horizontal" >
+                                    <ui:SymbolIcon Margin="0,0,6,0" Symbol="XboxConsole24" />
+                                    <TextBlock Text="导航" />
+                                </StackPanel>
+                            </TabItem.Header>
+                            <Grid>
+                                <ContentControl x:Name="UcNavigationView" />
+                            </Grid>
+                        </TabItem>
+                        <TabItem  x:Name="TabLogView" Width="100">
+                            <TabItem.Header>
+                                <StackPanel Orientation="Horizontal">
+                                    <ui:SymbolIcon Margin="0,0,6,0" Symbol="StoreMicrosoft16" />
+                                    <TextBlock Text="日志" />
+                                </StackPanel>
+                            </TabItem.Header>
+                            <Grid>
+                                <ContentControl x:Name="UcLogView" />
+                            </Grid>
+                        </TabItem>
+                    </ui:TabView>
+                </Grid>
+            </Grid>
+
+        </Grid>
+     
     </Grid>
 </Page>
