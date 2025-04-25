@@ -448,6 +448,8 @@
     <Compile Include="IVision.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="VisionHelper.cs" />
+    <Compile Include="VisionPro\CogCalibCheckerboardPro.cs" />
+    <Compile Include="VisionPro\CogPMAlignPro.cs" />
     <Compile Include="VisionPro\VisionProService.cs" />
   </ItemGroup>
   <ItemGroup>

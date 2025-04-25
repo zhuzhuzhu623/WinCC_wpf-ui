@@ -16,6 +16,9 @@
                                 <!--<Label Content="{TemplateBinding Header}" FontSize="42" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>-->
                             </Border>
 
+                            <ToggleButton Content="{TemplateBinding Header}"
+                                          IsChecked="{Binding IsExpanded, RelativeSource={RelativeSource TemplatedParent}}" />
+
                             <!--<Border Name="RightBorder" Background="{DynamicResource MainColor}" CornerRadius="0 12 12 0" Margin="0" Width="12" Height="36"/>-->
                         </StackPanel>
                     </Grid>
