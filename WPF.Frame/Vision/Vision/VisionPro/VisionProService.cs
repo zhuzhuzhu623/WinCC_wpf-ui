@@ -261,7 +261,11 @@ namespace Vision.VisionPro
 
             return BllResultFactory.Sucess();
         }
-
+       /// <summary>
+       /// 棋盘格校准
+       /// </summary>
+       /// <param name="bitmap"></param>
+       /// <returns></returns>
         public BllResult CalibCheckerboard(Bitmap bitmap)
         {
             try
@@ -284,7 +288,11 @@ namespace Vision.VisionPro
                 return BllResultFactory.Error(ex.Message + "\r\n" + ex.StackTrace);
             }
         }
-
+        /// <summary>
+        /// 获取棋盘格图片
+        /// </summary>
+        /// <param name="bitmap"></param>
+        /// <returns></returns>
         public BllResult<Bitmap> GetCalibCheckerboardImage(Bitmap bitmap)
         {
             CalibCheckerboardTool.InputImage = new CogImage8Grey(bitmap);

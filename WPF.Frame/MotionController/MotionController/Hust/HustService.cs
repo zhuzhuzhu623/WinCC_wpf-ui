@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WinCC.Motion.Hust
+namespace MotionController.Hust
 {
     public class HustService : IMotionBase
     {

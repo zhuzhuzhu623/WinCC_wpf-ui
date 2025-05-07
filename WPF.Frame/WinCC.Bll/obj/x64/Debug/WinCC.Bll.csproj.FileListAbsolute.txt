@@ -124,7 +124,6 @@ E:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC.Bll\bin\x64\Debug\netstandard.dll
 E:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC.Bll\bin\x64\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 E:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC.Bll\bin\x64\Debug\System.Threading.Tasks.Extensions.dll
 E:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC.Bll\bin\x64\Debug\Cognex.VisionPro.CorePlus.dll
-E:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC.Bll\bin\x64\Debug\Cognex.VisionPro.Interop.Core.dll
 E:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC.Bll\bin\x64\Debug\stdole.dll
 E:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC.Bll\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
 E:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC.Bll\bin\x64\Debug\Cognex.VisionPro3D.Core.dll

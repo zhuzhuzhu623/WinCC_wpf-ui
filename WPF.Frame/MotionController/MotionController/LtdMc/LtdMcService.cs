@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WinCC.Motion.LtdMc
+namespace MotionController.LtdMc
 {
     public class LtdMcService 
     {

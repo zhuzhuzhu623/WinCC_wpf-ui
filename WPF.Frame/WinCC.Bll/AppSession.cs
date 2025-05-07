@@ -15,12 +15,19 @@ using Vision.CameraPro;
 using Vision.VisionPro;
 using FileController.FileDal;
 using CommonModels;
+<<<<<<< HEAD
 using WinCC.Motion;
 using WinCC.Motion.Hust;
 using MvHalcon.ToolBase;
 using MvHalcon;
 using System.Drawing;
 using HalconDotNet;
+=======
+using MotionController;
+using MotionController.Hust;
+
+
+>>>>>>> 32237d8482dd919ee6401978a42110cf688b64d1
 namespace WinCC.Bll
 {
     public class AppSession
