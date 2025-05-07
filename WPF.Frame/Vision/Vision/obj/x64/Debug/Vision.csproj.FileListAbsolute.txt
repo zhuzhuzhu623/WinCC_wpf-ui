@@ -406,7 +406,6 @@ D:\Code_C#\WinCC_wpf-ui\WPF.Frame\Vision\Vision\bin\x64\Debug\System.ValueTuple.
 D:\Code_C#\WinCC_wpf-ui\WPF.Frame\Vision\Vision\bin\x64\Debug\CommonModels.pdb
 D:\Code_C#\WinCC_wpf-ui\WPF.Frame\Vision\Vision\bin\x64\Debug\Cognex.VisionPro.xml
 D:\Code_C#\WinCC_wpf-ui\WPF.Frame\Vision\Vision\bin\x64\Debug\Cognex.VisionPro.AutoSelect.xml
-D:\Code_C#\WinCC_wpf-ui\WPF.Frame\Vision\Vision\bin\x64\Debug\Cognex.VisionPro.Barcode.xml
 D:\Code_C#\WinCC_wpf-ui\WPF.Frame\Vision\Vision\bin\x64\Debug\Cognex.VisionPro.Blob.xml
 D:\Code_C#\WinCC_wpf-ui\WPF.Frame\Vision\Vision\bin\x64\Debug\Cognex.VisionPro.CalibFix.xml
 D:\Code_C#\WinCC_wpf-ui\WPF.Frame\Vision\Vision\bin\x64\Debug\Cognex.VisionPro.CalibFixPlus.xml
@@ -449,7 +448,6 @@ D:\Code_C#\WinCC_wpf-ui\WPF.Frame\Vision\Vision\bin\x64\Debug\Cognex.VisionPro.Q
 D:\Code_C#\WinCC_wpf-ui\WPF.Frame\Vision\Vision\bin\x64\Debug\Cognex.VisionPro.ResultsAnalysis.xml
 D:\Code_C#\WinCC_wpf-ui\WPF.Frame\Vision\Vision\bin\x64\Debug\Cognex.VisionPro.SearchMax.xml
 D:\Code_C#\WinCC_wpf-ui\WPF.Frame\Vision\Vision\bin\x64\Debug\Cognex.VisionPro.ToolGroup.xml
-D:\Code_C#\WinCC_wpf-ui\WPF.Frame\Vision\Vision\bin\x64\Debug\Cognex.VisionPro.TwoDSymbol.xml
 D:\Code_C#\WinCC_wpf-ui\WPF.Frame\Vision\Vision\bin\x64\Debug\Cognex.VisionPro3D.xml
 D:\Code_C#\WinCC_wpf-ui\WPF.Frame\Vision\Vision\bin\x64\Debug\Cognex.VisionPro3D.Core.xml
 D:\Code_C#\WinCC_wpf-ui\WPF.Frame\Vision\Vision\bin\x64\Debug\Cognex.VisionPro3D.Display.Controls.xml
@@ -459,3 +457,4 @@ D:\Code_C#\WinCC_wpf-ui\WPF.Frame\Vision\Vision\bin\x64\Debug\System.Memory.xml
 D:\Code_C#\WinCC_wpf-ui\WPF.Frame\Vision\Vision\bin\x64\Debug\System.Numerics.Vectors.xml
 D:\Code_C#\WinCC_wpf-ui\WPF.Frame\Vision\Vision\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\Code_C#\WinCC_wpf-ui\WPF.Frame\Vision\Vision\obj\x64\Debug\Vision.csproj.Up2Date
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\Vision\Vision\bin\x64\Debug\stdole.dll
