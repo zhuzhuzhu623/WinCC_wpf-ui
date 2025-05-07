@@ -17,6 +17,10 @@ using FileController.FileDal;
 using CommonModels;
 using WinCC.Motion;
 using WinCC.Motion.Hust;
+using MvHalcon.ToolBase;
+using MvHalcon;
+using System.Drawing;
+using HalconDotNet;
 namespace WinCC.Bll
 {
     public class AppSession
@@ -54,7 +58,9 @@ namespace WinCC.Bll
         /// <returns></returns>
         public static BllResult InitSystemSetting()
         {
+          
             string strPath = AppDomain.CurrentDomain.BaseDirectory + "\\SystemSetting.txt";
+
 
             var result = FileHelper.Load<SystemSetting>(strPath);
             if(!result.Success)
@@ -73,6 +79,7 @@ namespace WinCC.Bll
         /// <returns></returns>
         public static BllResult InitVision()
         {
+            return BllResultFactory.Sucess();
             CameraVisionPro = new CameraVisionPro();
             CameraVisionPro.InitCamera(SystemSetting.CameraDatas);
             return BllResultFactory.Sucess();
@@ -111,6 +118,23 @@ namespace WinCC.Bll
 
             var result = FileHelper.Save<SystemSetting>(SystemSetting,strPath);
             return BllResultFactory.Sucess();
+        }
+
+
+        public static void Ocr()
+        {
+       
+            Bitmap bitmap = new Bitmap("D:\\VisionProImage\\Ocr\\2.jpg");
+            Bitmap bitmap1 = new Bitmap("D:\\VisionProImage\\Ocr\\2.jpg");
+            MvOcrTool mvOcrTool = new MvOcrTool();
+            mvOcrTool.inputImage = mvOcrTool.Bitmap24ToHobject(bitmap);
+            mvOcrTool.templateRegion = mvOcrTool.Bitmap24ToHobject(bitmap1);
+            mvOcrTool.standardCharList = "A";
+            //mvOcrTool.standardCharList = "ARTINTRIER";
+            mvOcrTool.SetRoi();
+            mvOcrTool.Train();
+
+            mvOcrTool.Run();
         }
 
     }

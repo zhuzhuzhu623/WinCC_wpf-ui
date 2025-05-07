@@ -10,3 +10,9 @@ E:\GitHUb\WinCC_wpf-ui\WPF.Frame\CommonModels\CommonModels\obj\x64\Debug\CommonM
 E:\GitHUb\WinCC_wpf-ui\WPF.Frame\CommonModels\CommonModels\obj\x64\Debug\CommonModels.csproj.CoreCompileInputs.cache
 E:\GitHUb\WinCC_wpf-ui\WPF.Frame\CommonModels\CommonModels\obj\x64\Debug\CommonModels.dll
 E:\GitHUb\WinCC_wpf-ui\WPF.Frame\CommonModels\CommonModels\obj\x64\Debug\CommonModels.pdb
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\CommonModels\CommonModels\bin\x64\Debug\CommonModels.dll
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\CommonModels\CommonModels\bin\x64\Debug\CommonModels.pdb
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\CommonModels\CommonModels\obj\x64\Debug\CommonModels.csproj.AssemblyReference.cache
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\CommonModels\CommonModels\obj\x64\Debug\CommonModels.csproj.CoreCompileInputs.cache
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\CommonModels\CommonModels\obj\x64\Debug\CommonModels.dll
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\CommonModels\CommonModels\obj\x64\Debug\CommonModels.pdb

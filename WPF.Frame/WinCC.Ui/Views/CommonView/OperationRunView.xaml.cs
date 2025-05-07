@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WinCC.Bll;
 using WinCC.Ui.Views.CameraView;
 
 namespace WinCC.Ui.Views.CommonView
@@ -48,6 +49,11 @@ namespace WinCC.Ui.Views.CommonView
         private void BtnNewPro_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            AppSession.Ocr();
         }
     }
 }

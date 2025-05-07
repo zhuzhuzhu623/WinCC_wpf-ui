@@ -16,3 +16,12 @@ E:\GitHUb\WinCC_wpf-ui\WPF.Frame\MotionController\MotionController\obj\x64\Debug
 E:\GitHUb\WinCC_wpf-ui\WPF.Frame\MotionController\MotionController\obj\x64\Debug\MotionCo.BACF820F.Up2Date
 E:\GitHUb\WinCC_wpf-ui\WPF.Frame\MotionController\MotionController\obj\x64\Debug\MotionController.dll
 E:\GitHUb\WinCC_wpf-ui\WPF.Frame\MotionController\MotionController\obj\x64\Debug\MotionController.pdb
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\MotionController\MotionController\bin\x64\Debug\MotionController.dll
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\MotionController\MotionController\bin\x64\Debug\MotionController.pdb
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\MotionController\MotionController\bin\x64\Debug\CommonModels.dll
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\MotionController\MotionController\bin\x64\Debug\CommonModels.pdb
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\MotionController\MotionController\obj\x64\Debug\MotionController.csproj.AssemblyReference.cache
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\MotionController\MotionController\obj\x64\Debug\MotionController.csproj.CoreCompileInputs.cache
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\MotionController\MotionController\obj\x64\Debug\MotionCo.BACF820F.Up2Date
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\MotionController\MotionController\obj\x64\Debug\MotionController.dll
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\MotionController\MotionController\obj\x64\Debug\MotionController.pdb

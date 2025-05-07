@@ -120,7 +120,7 @@
                     <TextBlock  Text="系统" Style="{StaticResource HeadTextBlock}" />
                 </StackPanel>
             </Grid>
-            <ui:Button Grid.Column="0" Style="{StaticResource HeadButton}">
+            <ui:Button Grid.Column="0" Style="{StaticResource HeadButton}" Click="Button_Click">
                 <StackPanel Orientation="Vertical">
                     <Image Source="pack://application:,,,/Asserts/Photos/runPro.png" Width="25" Height="25"/>
                     <TextBlock  Text="执行" Style="{StaticResource HeadTextBlock}"/>

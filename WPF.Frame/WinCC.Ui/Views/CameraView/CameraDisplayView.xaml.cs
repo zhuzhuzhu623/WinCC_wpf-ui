@@ -51,7 +51,7 @@ namespace WinCC.Ui.Views.CameraView
             InitializeComponent();
 
             CameraData camera = null;
-            if (AppSession.SystemSetting != null)
+            if (AppSession.SystemSetting.CameraDatas.Count != 0)
             {
                 camera = AppSession.SystemSetting.CameraDatas[0];
             }

@@ -1,0 +1,7 @@
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\MvHalcon\MvHalcon\bin\Debug\MvHalcon.dll
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\MvHalcon\MvHalcon\bin\Debug\MvHalcon.pdb
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\MvHalcon\MvHalcon\obj\Debug\MvHalcon.csproj.AssemblyReference.cache
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\MvHalcon\MvHalcon\obj\Debug\MvHalcon.csproj.CoreCompileInputs.cache
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\MvHalcon\MvHalcon\obj\Debug\MvHalcon.csproj.Up2Date
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\MvHalcon\MvHalcon\obj\Debug\MvHalcon.dll
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\MvHalcon\MvHalcon\obj\Debug\MvHalcon.pdb

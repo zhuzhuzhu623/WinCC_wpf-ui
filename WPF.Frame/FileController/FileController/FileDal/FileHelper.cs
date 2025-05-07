@@ -39,7 +39,9 @@ namespace FileController.FileDal
                     resultTxt = resultTxt.Replace("\r\n", "");
                     var result = JsonConvert.DeserializeObject<T>(resultTxt);
                     if (result == null)
+                    {
                         return BllResultFactory<T>.Error("配置文件解析失败");
+                    }                      
                     return BllResultFactory<T>.Sucess(result);
                 }
                 catch (Exception ex)

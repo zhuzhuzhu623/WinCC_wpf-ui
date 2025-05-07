@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-E:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC.Ui\obj\x64\Debug\
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\WinCC.Ui\obj\x64\Debug\
 WinCC.Ui
 none
 false
 DEBUG;TRACE
-E:\GitHUb\WinCC_wpf-ui\WPF.Frame\WinCC.Ui\App.xaml
+D:\Code_C#\WinCC_wpf-ui\WPF.Frame\WinCC.Ui\App.xaml
 18518109013
 
 16-1622942694
-108-949259626
+104-78502698
 MainWindow.xaml;Resources\Brushes.xaml;Resources\ButtonStyle.xaml;Resources\DataGridStyle.xaml;Resources\ListBoxStyle.xaml;Resources\ExpanderStyle.xaml;Resources\TabControlStyle.xaml;Resources\TextBlockBox.xaml;Views\CameraView\CameraDisplayView.xaml;Views\CameraView\CogDisplayView.xaml;Views\CameraView\NavigationImageView.xaml;Views\CommonView\LogView.xaml;Views\CommonView\OperationManualView.xaml;Views\CommonView\OperationRunView.xaml;Views\Pages\AutoRun.xaml;Views\Pages\MaintainPage.xaml;Views\Pages\ProgramPage.xaml;WinLog.xaml;
 
 False

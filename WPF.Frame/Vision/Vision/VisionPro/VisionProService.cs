@@ -39,7 +39,7 @@ namespace Vision.VisionPro
         /// <summary>
         /// 获取当前轴的坐标
         /// </summary>
-        public event Func<(int, int)> GetCurrentAxisValue;
+        //public event Func<(int, int)> GetCurrentAxisValue;
 
         /// <summary>
         /// 获取当前图片
@@ -214,12 +214,13 @@ namespace Vision.VisionPro
                 NPointCalib.Calibration.DeletePointPair(n - 1 - i);
             }
             VisionHelper.VisionConfig.NinePointEntities = new List<Vision.Common.Entitis.NinePointEntity>();
-            var resultAxis = GetCurrentAxisValue();
+            //var resultAxis = GetCurrentAxisValue();
             int stepX = 4000;
             int stepY = 3000;
-
-            int iX = resultAxis.Item1 - stepX;
-            int iY = resultAxis.Item2 - stepY;
+            int iX = 0;
+            int iY = 0;
+            //  int iX = resultAxis.Item1 - stepX;
+            //   int iY = resultAxis.Item2 - stepY;
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)
